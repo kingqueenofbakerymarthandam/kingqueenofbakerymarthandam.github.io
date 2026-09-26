@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King &amp; Queen Cake | Cakes &amp; Brownies in Marthandam</title>
+<meta name="description" content="King & Queen Cake in Marthandam offers cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.">
+<meta name="theme-color" content="#c2185b">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="King & Queen Cake | Cakes & Brownies in Marthandam">
+<meta property="og:description" content="Cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions. Free delivery within 3 KM. Order on WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=1200&h=630&q=75">
+<meta property="og:locale" content="en_IN">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data: only information supplied by the bakery -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "King & Queen Cake",
+  "telephone": "+917418432421",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Singular Street",
+    "addressLocality": "Marthandam",
+    "addressCountry": "IN"
+  },
+  "servesCuisine": "Cakes, Bento Cakes, Brownies",
+  "priceRange": "₹"
+}
+</script>
+
+<!-- Image fallback: defined early so inline onerror handlers work before the main script loads -->
+<script>
+window.handleImageError = function (img) {
+  if (img.dataset.fallbackApplied) return;
+  img.dataset.fallbackApplied = '1';
+  img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1f6"/><stop offset="1" stop-color="#f8dce7"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><g fill="none" stroke="#c2185b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(200 205)"><path d="M-95 30h190M-80 30v-45q0-20 20-20h120q20 0 20 20v45"/><path d="M-40-35v-30M0-35v-38M40-35v-30"/><path d="M-80-10c15 12 30 12 45 0s30-12 45 0 30 12 45 0 25-6 25-6"/></g><text x="200" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#8e1746">King &amp; Queen Cake</text></svg>'
+  );
+};
+</script>
+
+<style>
+/* ========================================
+   1. RESET
+======================================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+img,svg{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+/* ========================================
+   2. VARIABLES
+======================================== */
+:root{
+  --primary:#c2185b;
+  --primary-dark:#8e1746;
+  --primary-deep:#5e0f30;
+  --primary-light:#f8dce7;
+  --cream:#fffaf5;
+  --pink-light:#fff1f6;
+  --gold:#d6a63a;
+  --gold-light:#f6e4b5;
+  --gold-dark:#a9791c;
+  --dark:#2d2026;
+  --text:#3b2c32;
+  --muted:#756970;
+  --white:#ffffff;
+  --border:rgba(194,24,91,.12);
+  --whatsapp:#25d366;
+  --whatsapp-dark:#1da851;
+
+  --shadow-sm:0 2px 8px rgba(45,32,38,.06),0 6px 18px rgba(45,32,38,.06);
+  --shadow:0 15px 40px rgba(45,32,38,.10);
+  --shadow-lg:0 10px 20px rgba(45,32,38,.06),0 30px 70px rgba(142,23,70,.16);
+  --shadow-3d:0 1px 0 rgba(255,255,255,.9) inset,0 -1px 0 rgba(142,23,70,.08) inset,0 12px 24px -8px rgba(142,23,70,.22),0 30px 60px -20px rgba(45,32,38,.28);
+
+  --font-head:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-body:'Poppins','Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+
+  --radius:22px;
+  --radius-sm:14px;
+  --radius-pill:999px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --dur:.35s;
+  --nav-h:72px;
+  --max-w:1240px;
+}
+
+/* ========================================
+   3. GLOBAL
+======================================== */
+body{
+  font-family:var(--font-body);
+  color:var(--text);
+  background:var(--cream);
+  line-height:1.65;
+  font-size:16px;
+  overflow-x:hidden;
+}
+.container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 20px}
+section{position:relative;padding:72px 0}
+.section-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--primary);margin-bottom:14px;
+}
+.eyebrow::before,.eyebrow::after{content:"";width:22px;height:1px;background:var(--gold)}
+.section-head p{color:var(--muted);font-size:1.02rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ========================================
+   4. TYPOGRAPHY
+======================================== */
+h1,h2,h3,h4{font-family:var(--font-head);color:var(--dark);line-height:1.15;font-weight:600}
+h1{font-size:clamp(2.3rem,5.4vw,4.1rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:12px}
+h3{font-size:1.2rem}
+.gradient-text{
+  background:linear-gradient(120deg,var(--primary-dark),var(--primary) 55%,var(--gold-dark));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* ========================================
+   5. ANNOUNCEMENT + NAVIGATION
+======================================== */
+.announce{
+  background:linear-gradient(90deg,var(--primary-deep),var(--primary-dark) 50%,var(--primary));
+  color:#fff;text-align:center;font-size:.82rem;font-weight:500;padding:9px 16px;letter-spacing:.01em;
+}
+.announce strong{color:var(--gold-light);font-weight:600}
+
+.nav{
+  position:sticky;top:0;z-index:900;height:var(--nav-h);
+  background:rgba(255,250,245,.82);
+  backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--border);
+  transition:box-shadow var(--dur) var(--ease);
+}
+.nav.scrolled{box-shadow:0 8px 30px rgba(45,32,38,.08)}
+.nav .container{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:1.12rem;color:var(--primary-dark);letter-spacing:.02em;white-space:nowrap}
+.logo .crown{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:1.25rem;color:#fff;
+  background:linear-gradient(145deg,var(--primary),var(--primary-dark));
+  box-shadow:0 6px 14px -4px rgba(142,23,70,.55),inset 0 1px 0 rgba(255,255,255,.35);
+  transform:translateZ(0);
+}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{padding:10px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:.93rem;color:var(--text);transition:background var(--dur),color var(--dur)}
+.nav-links a:hover,.nav-links a.active{background:var(--primary-light);color:var(--primary-dark)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.hamburger{display:none;width:46px;height:46px;border-radius:12px;place-items:center;background:var(--white);box-shadow:var(--shadow-sm)}
+.hamburger span{display:block;width:22px;height:2px;background:var(--primary-dark);border-radius:2px;transition:transform .3s var(--ease),opacity .3s}
+.hamburger span+span{margin-top:5px}
+.hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ========================================
+   6. BUTTONS
+======================================== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:48px;padding:12px 24px;border-radius:var(--radius-pill);
+  font-weight:600;font-size:.95rem;line-height:1;white-space:nowrap;
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease),background var(--dur),color var(--dur);
+  position:relative;transform:translateZ(0);
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-primary{
+  color:#fff;
+  background:linear-gradient(160deg,#d8286d,var(--primary) 45%,var(--primary-dark));
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 10px 24px -8px rgba(194,24,91,.65);
+}
+.btn-primary:hover{box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 30px -8px rgba(194,24,91,.7)}
+.btn-outline{color:var(--primary-dark);background:var(--white);border:1.5px solid rgba(194,24,91,.28);box-shadow:var(--shadow-sm)}
+.btn-outline:hover{border-color:var(--primary);background:var(--pink-light)}
+.btn-whatsapp{color:#fff;background:linear-gradient(160deg,#2fe07a,var(--whatsapp) 45%,var(--whatsapp-dark));box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 10px 24px -8px rgba(37,211,102,.6)}
+.btn-whatsapp:hover{box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 30px -8px rgba(37,211,102,.7)}
+.btn-gold{color:var(--dark);background:linear-gradient(160deg,#f5d98a,var(--gold) 50%,var(--gold-dark));box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 10px 24px -8px rgba(214,166,58,.6)}
+.btn-dark{color:#fff;background:var(--dark);box-shadow:0 10px 24px -8px rgba(45,32,38,.5)}
+.btn-sm{min-height:42px;padding:10px 16px;font-size:.86rem}
+.btn-block{width:100%}
+
+/* ========================================
+   7. HERO (3D stage)
+======================================== */
+.hero{
+  padding:56px 0 64px;overflow:hidden;
+  background:
+    radial-gradient(900px 500px at 85% 10%,rgba(248,220,231,.9),transparent 60%),
+    radial-gradient(700px 400px at 5% 90%,rgba(246,228,181,.55),transparent 60%),
+    linear-gradient(180deg,#fff6f9,var(--cream));
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;z-index:1}
+.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);background:#fff;border:1px solid var(--border);border-radius:var(--radius-pill);padding:8px 16px;box-shadow:var(--shadow-sm);margin-bottom:22px}
+.hero-label::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(214,166,58,.22)}
+.hero p.lead{font-size:1.1rem;color:var(--muted);max-width:520px;margin:20px 0 30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-notes{display:flex;flex-wrap:wrap;gap:18px 26px;margin-top:30px;font-size:.88rem;color:var(--text)}
+.hero-notes li{display:flex;align-items:center;gap:9px;font-weight:500}
+.hero-notes svg{width:18px;height:18px;color:var(--primary)}
+
+/* 3D stage */
+.stage{position:relative;perspective:1400px;min-height:520px;display:grid;place-items:center}
+.stage-plate{
+  position:absolute;border-radius:50%;
+  transform:rotateX(72deg);transform-origin:center;
+  filter:blur(1px);
+}
+.stage-plate.p1{width:82%;aspect-ratio:1;background:radial-gradient(circle,rgba(194,24,91,.18),rgba(194,24,91,.05) 55%,transparent 72%);bottom:-6%}
+.stage-plate.p2{width:60%;aspect-ratio:1;background:radial-gradient(circle,rgba(214,166,58,.28),rgba(214,166,58,.06) 60%,transparent 75%);bottom:8%}
+.cake-card{
+  position:relative;width:min(100%,440px);aspect-ratio:4/4.6;border-radius:34px;overflow:hidden;
+  transform-style:preserve-3d;
+  transform:rotateY(-10deg) rotateX(6deg);
+  box-shadow:
+    0 2px 0 rgba(255,255,255,.7) inset,
+    0 25px 50px -12px rgba(142,23,70,.45),
+    0 60px 120px -30px rgba(45,32,38,.45);
+  transition:transform .6s var(--ease);
+  animation:float 7s ease-in-out infinite;
+  will-change:transform;
+}
+.cake-card img{width:100%;height:100%;object-fit:cover}
+.cake-card::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(120deg,rgba(255,255,255,.35),transparent 30%,transparent 70%,rgba(255,255,255,.15)),linear-gradient(180deg,transparent 65%,rgba(94,15,48,.35));
+}
+.stage:hover .cake-card{animation-play-state:paused}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+
+.float-chip{
+  position:absolute;z-index:3;display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.9);border-radius:18px;padding:12px 16px;
+  box-shadow:var(--shadow-3d);font-size:.85rem;font-weight:600;color:var(--dark);
+  transform:translateZ(80px);
+  animation:float 6s ease-in-out infinite;
+}
+.float-chip .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--primary),var(--primary-dark));flex:none;box-shadow:0 6px 14px -6px rgba(142,23,70,.6)}
+.float-chip .ic.gold{background:linear-gradient(145deg,#f0cf7a,var(--gold-dark))}
+.float-chip .ic.green{background:linear-gradient(145deg,#3ae086,var(--whatsapp-dark))}
+.float-chip .ic svg{width:20px;height:20px}
+.float-chip small{display:block;font-weight:400;color:var(--muted);font-size:.74rem}
+.chip-a{top:6%;left:-4%;animation-delay:-2s}
+.chip-b{bottom:18%;right:0;animation-delay:-4s}
+.chip-c{bottom:-2%;left:8%;animation-delay:-1s}
+.hero-deco{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+.deco-1{width:120px;height:120px;top:-30px;right:6%;background:radial-gradient(circle at 30% 30%,#fff,var(--primary-light) 60%,rgba(248,220,231,0));opacity:.9}
+.deco-2{width:70px;height:70px;bottom:6%;left:46%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold-light) 60%,rgba(246,228,181,0))}
+
+/* ========================================
+   8. BENEFITS
+======================================== */
+.benefits{padding:20px 0 60px;margin-top:-30px}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.benefit{
+  background:var(--white);border-radius:var(--radius);padding:26px 22px;
+  box-shadow:var(--shadow-3d);border:1px solid rgba(255,255,255,.8);
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+  transform-style:preserve-3d;
+}
+.benefit:hover{transform:translateY(-6px) rotateX(2deg);box-shadow:var(--shadow-lg)}
+.benefit .icon{
+  width:56px;height:56px;border-radius:18px;display:grid;place-items:center;margin-bottom:16px;color:var(--primary-dark);
+  background:linear-gradient(160deg,#fff,var(--primary-light));
+  box-shadow:0 1px 0 #fff inset,0 -2px 0 rgba(142,23,70,.08) inset,0 10px 20px -10px rgba(142,23,70,.35);
+}
+.benefit .icon svg{width:26px;height:26px}
+.benefit h3{font-size:1.08rem;margin-bottom:6px}
+.benefit p{color:var(--muted);font-size:.92rem}
+
+/* ========================================
+   9. FEATURED PRODUCTS
+======================================== */
+.featured{background:linear-gradient(180deg,var(--cream),var(--pink-light) 50%,var(--cream))}
+.featured-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.feat{
+  position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/3.6;text-align:left;
+  box-shadow:var(--shadow);transform-style:preserve-3d;transition:transform .45s var(--ease),box-shadow .45s var(--ease);
+  background:var(--dark);width:100%;
+}
+.feat img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.feat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,32,38,0) 40%,rgba(45,32,38,.85))}
+.feat .cap{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;color:#fff}
+.feat .cap strong{display:block;font-family:var(--font-head);font-size:1.05rem;line-height:1.2}
+.feat .cap span{font-size:.76rem;opacity:.85}
+.feat:hover{transform:translateY(-8px) rotateX(3deg);box-shadow:var(--shadow-lg)}
+.feat:hover img{transform:scale(1.07)}
+
+/* ========================================
+   10. CATALOG / FILTERS / SEARCH
+======================================== */
+.catalog{padding-top:80px}
+.toolbar{display:flex;flex-direction:column;gap:18px;align-items:center;margin-bottom:34px}
+.search{position:relative;width:100%;max-width:520px}
+.search input{
+  width:100%;min-height:54px;padding:14px 52px 14px 50px;border-radius:var(--radius-pill);
+  border:1.5px solid var(--border);background:var(--white);box-shadow:var(--shadow-sm);
+  font-size:.98rem;color:var(--text);transition:border-color var(--dur),box-shadow var(--dur);
+}
+.search input::placeholder{color:#a19599}
+.search input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(194,24,91,.12),var(--shadow-sm)}
+.search .s-ic{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--primary)}
+.search .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;display:none;place-items:center;color:var(--muted)}
+.search .clear.show{display:grid}
+.search .clear:hover{background:var(--pink-light);color:var(--primary-dark)}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.chip{
+  min-height:42px;padding:9px 18px;border-radius:var(--radius-pill);font-weight:500;font-size:.88rem;
+  background:var(--white);color:var(--text);border:1.5px solid var(--border);box-shadow:var(--shadow-sm);
+  transition:all var(--dur) var(--ease);
+}
+.chip:hover{border-color:var(--primary);color:var(--primary-dark);transform:translateY(-2px)}
+.chip[aria-pressed="true"]{background:linear-gradient(160deg,var(--primary),var(--primary-dark));color:#fff;border-color:transparent;box-shadow:0 10px 22px -8px rgba(194,24,91,.6)}
+.result-meta{text-align:center;color:var(--muted);font-size:.88rem;margin-bottom:20px}
+
+/* ========================================
+   11. PRODUCT CARDS (3D tilt)
+======================================== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;perspective:1200px}
+.card{
+  position:relative;background:var(--white);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-3d);border:1px solid rgba(255,255,255,.7);
+  transform-style:preserve-3d;transform:rotateX(var(--rx,0)) rotateY(var(--ry,0)) translateZ(0);
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease);
+  display:flex;flex-direction:column;
+}
+.card:hover{box-shadow:var(--shadow-lg)}
+.card.lift{transition:box-shadow .45s var(--ease);}
+.card-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--primary-light);cursor:pointer;width:100%;text-align:left}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.card:hover .card-media img{transform:scale(1.06)}
+.card-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.12),transparent 30%,transparent 75%,rgba(45,32,38,.25));pointer-events:none}
+.badge{
+  position:absolute;top:12px;left:12px;z-index:2;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(255,255,255,.92);color:var(--primary-dark);padding:6px 10px;border-radius:var(--radius-pill);box-shadow:var(--shadow-sm);
+}
+.badge.gold{background:linear-gradient(135deg,#f6e4b5,var(--gold));color:var(--dark)}
+.card-body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1;transform:translateZ(20px)}
+.card-body h3{font-size:1.06rem;margin-bottom:2px}
+.card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:4px 0 8px}
+.weight{font-size:.78rem;color:var(--muted);display:inline-flex;align-items:center;gap:5px}
+.weight svg{width:13px;height:13px}
+.price{font-family:var(--font-head);font-weight:700;font-size:1.3rem;color:var(--primary-dark);line-height:1}
+.price.req{font-family:var(--font-body);font-weight:600;font-size:.82rem;color:var(--gold-dark)}
+.desc{font-size:.85rem;color:var(--muted);flex:1;margin-bottom:14px}
+.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.card-actions .btn{min-height:42px;padding:9px 10px;font-size:.82rem}
+
+/* Empty state */
+.empty{display:none;text-align:center;padding:56px 20px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);max-width:560px;margin:0 auto}
+.empty.show{display:block}
+.empty .ic{width:72px;height:72px;border-radius:24px;margin:0 auto 18px;display:grid;place-items:center;background:var(--pink-light);color:var(--primary)}
+.empty .ic svg{width:32px;height:32px}
+.empty h3{margin-bottom:6px}
+.empty p{color:var(--muted);margin-bottom:18px}
+
+/* Sub-catalog sections */
+.sub-cat{padding-top:64px}
+.info-strip{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:-18px auto 34px;
+}
+.info-strip span{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;font-weight:500;background:var(--white);border:1px solid var(--border);padding:9px 14px;border-radius:var(--radius-pill);box-shadow:var(--shadow-sm);color:var(--text)}
+.info-strip svg{width:16px;height:16px;color:var(--primary)}
+.brownies{background:linear-gradient(180deg,var(--cream),#fbeee4 50%,var(--cream))}
+
+/* ========================================
+   12. MODAL
+======================================== */
+.modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(45,32,38,.62);backdrop-filter:blur(6px);animation:fade .3s var(--ease)}
+.modal-panel{
+  position:relative;z-index:1;width:100%;max-width:880px;max-height:92vh;overflow:auto;
+  background:var(--white);border-radius:28px;box-shadow:0 40px 100px -20px rgba(0,0,0,.5);
+  display:grid;grid-template-columns:1fr 1fr;animation:pop .4s var(--ease);
+}
+.modal-img{aspect-ratio:1/1;background:var(--primary-light)}
+.modal-img img{width:100%;height:100%;object-fit:cover}
+.modal-content{padding:34px 30px 30px;display:flex;flex-direction:column}
+.modal-content .cat{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
+.modal-content h3{font-size:1.75rem;margin-bottom:10px}
+.modal-content .rows{display:grid;gap:10px;margin:14px 0 18px}
+.modal-content .row{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--cream);border-radius:var(--radius-sm);font-size:.92rem}
+.modal-content .row b{font-family:var(--font-head);color:var(--primary-dark);font-size:1.15rem}
+.modal-content .row b.req{font-family:var(--font-body);font-size:.85rem;color:var(--gold-dark)}
+.modal-content .desc{font-size:.95rem;margin-bottom:20px}
+.modal-note{font-size:.8rem;color:var(--muted);margin-top:14px;display:flex;gap:8px;align-items:flex-start}
+.modal-note svg{width:16px;height:16px;flex:none;color:var(--primary);margin-top:2px}
+.modal-close{position:absolute;top:12px;right:12px;z-index:2;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--dark);box-shadow:var(--shadow-sm)}
+.modal-close:hover{background:var(--primary-light);color:var(--primary-dark)}
+.modal-close svg{width:20px;height:20px}
+@keyframes fade{from{opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.96)}}
+
+/* ========================================
+   13. CUSTOMIZED SECTION
+======================================== */
+.custom{padding:80px 0}
+.custom-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.custom-stage{position:relative;perspective:1200px;min-height:440px}
+.custom-img{
+  position:absolute;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);
+  transform-style:preserve-3d;transition:transform .6s var(--ease);
+}
+.custom-img img{width:100%;height:100%;object-fit:cover}
+.ci-1{width:64%;aspect-ratio:1/1.1;left:0;top:0;transform:rotateY(8deg) rotateX(-2deg)}
+.ci-2{width:48%;aspect-ratio:1;right:0;bottom:0;transform:rotateY(-10deg) rotateX(3deg) translateZ(40px);border:6px solid var(--white)}
+.custom-stage:hover .ci-1{transform:rotateY(4deg) rotateX(-1deg) translateY(-6px)}
+.custom-stage:hover .ci-2{transform:rotateY(-6deg) rotateX(2deg) translateZ(60px) translateY(-6px)}
+.custom-tags{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px}
+.custom-tags span{background:var(--white);border:1px solid var(--border);padding:8px 14px;border-radius:var(--radius-pill);font-size:.86rem;font-weight:500;box-shadow:var(--shadow-sm)}
+.custom p{color:var(--muted);font-size:1.02rem}
+
+/* ========================================
+   14. CELEBRATION
+======================================== */
+.celebrate{background:linear-gradient(180deg,var(--cream),var(--pink-light) 60%,var(--cream))}
+.celebrate-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.occasion{
+  background:var(--white);border-radius:var(--radius);padding:30px 24px;text-align:center;
+  box-shadow:var(--shadow-3d);border:1px solid rgba(255,255,255,.8);transform-style:preserve-3d;
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.occasion:hover{transform:translateY(-6px) rotateX(2deg);box-shadow:var(--shadow-lg)}
+.occasion .ring{
+  width:72px;height:72px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;color:var(--primary-dark);
+  background:radial-gradient(circle at 30% 25%,#fff,var(--primary-light));
+  box-shadow:0 2px 0 #fff inset,0 -3px 0 rgba(142,23,70,.08) inset,0 14px 26px -12px rgba(142,23,70,.45);
+}
+.occasion .ring svg{width:30px;height:30px}
+.occasion p{color:var(--muted);font-size:.92rem;margin-top:6px}
+
+/* ========================================
+   15. CUSTOM BANNER (dark 3D)
+======================================== */
+.banner{padding:0}
+.banner-inner{
+  position:relative;overflow:hidden;border-radius:32px;padding:64px 40px;text-align:center;color:#fff;
+  background:radial-gradient(800px 400px at 20% 0%,rgba(214,166,58,.35),transparent 60%),radial-gradient(700px 400px at 90% 100%,rgba(194,24,91,.6),transparent 60%),linear-gradient(160deg,#4a0c26,var(--primary-deep) 50%,#2d2026);
+  box-shadow:0 40px 90px -30px rgba(94,15,48,.7);
+}
+.banner-inner h2{color:#fff;font-size:clamp(1.9rem,4vw,3rem)}
+.banner-inner p{color:rgba(255,255,255,.82);max-width:540px;margin:14px auto 28px;font-size:1.05rem}
+.banner-orb{position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none}
+.orb-1{width:220px;height:220px;left:-60px;top:-60px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.35),rgba(214,166,58,.25) 45%,transparent 70%)}
+.orb-2{width:160px;height:160px;right:-40px;bottom:-50px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.3),rgba(194,24,91,.35) 45%,transparent 70%)}
+
+/* ========================================
+   16. ABOUT
+======================================== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{position:relative;perspective:1200px}
+.about-img .frame{
+  border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:var(--shadow-lg);
+  transform:rotateY(6deg) rotateX(2deg);transition:transform .6s var(--ease);
+}
+.about-img:hover .frame{transform:rotateY(2deg) rotateX(1deg)}
+.about-img .frame img{width:100%;height:100%;object-fit:cover}
+.about-card{
+  position:absolute;right:-14px;bottom:-18px;background:var(--white);border-radius:20px;padding:16px 18px;
+  box-shadow:var(--shadow-3d);display:flex;align-items:center;gap:14px;max-width:270px;
+}
+.about-card .ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--primary),var(--primary-dark));flex:none}
+.about-card .ic svg{width:22px;height:22px}
+.about-card b{display:block;font-size:.92rem;color:var(--dark)}
+.about-card small{color:var(--muted);font-size:.78rem}
+.about p{color:var(--muted);font-size:1.02rem;margin-bottom:16px}
+.about-list{display:grid;gap:12px;margin-top:22px}
+.about-list li{display:flex;align-items:center;gap:12px;font-weight:500;font-size:.95rem}
+.about-list svg{width:22px;height:22px;color:var(--primary);flex:none}
+
+/* ========================================
+   17. LOCATION
+======================================== */
+.location{background:linear-gradient(180deg,var(--cream),var(--pink-light) 50%,var(--cream))}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.loc-card{
+  background:var(--white);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow-3d);border:1px solid rgba(255,255,255,.8);
+  display:flex;flex-direction:column;gap:14px;
+}
+.loc-card h3{font-size:1.5rem}
+.addr{display:flex;gap:14px;align-items:flex-start}
+.addr .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:var(--primary-dark);background:linear-gradient(160deg,#fff,var(--primary-light));box-shadow:0 8px 18px -10px rgba(142,23,70,.4);flex:none}
+.addr .ic svg{width:22px;height:22px}
+.addr p{color:var(--text);font-size:1rem;line-height:1.5}
+.addr p b{color:var(--dark);display:block}
+.map-visual{
+  position:relative;border-radius:var(--radius);overflow:hidden;min-height:320px;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(194,24,91,.16),transparent 30%),
+    repeating-linear-gradient(0deg,rgba(142,23,70,.06) 0 1px,transparent 1px 42px),
+    repeating-linear-gradient(90deg,rgba(142,23,70,.06) 0 1px,transparent 1px 42px),
+    linear-gradient(160deg,#fff5f8,#fbe7ee);
+  box-shadow:var(--shadow);display:grid;place-items:center;
+}
+.pin{position:relative;text-align:center}
+.pin .dot{width:74px;height:74px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:0 auto;background:linear-gradient(145deg,var(--primary),var(--primary-dark));box-shadow:0 20px 40px -12px rgba(142,23,70,.6);display:grid;place-items:center;animation:bob 3s ease-in-out infinite}
+.pin .dot span{transform:rotate(45deg);font-size:1.6rem}
+.pin .shadow{width:40px;height:10px;border-radius:50%;background:rgba(142,23,70,.25);margin:16px auto 0;filter:blur(3px)}
+.pin b{display:block;margin-top:14px;font-family:var(--font-head);font-size:1.15rem;color:var(--primary-dark)}
+.pin small{color:var(--muted)}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+
+/* ========================================
+   18. CONTACT
+======================================== */
+.contact{padding-bottom:88px}
+.contact .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:760px;margin:0 auto}
+.contact-card{
+  background:var(--white);border-radius:var(--radius);padding:30px 24px;text-align:center;
+  box-shadow:var(--shadow-3d);border:1px solid rgba(255,255,255,.8);transform-style:preserve-3d;
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);display:flex;flex-direction:column;gap:14px;align-items:center;
+}
+.contact-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.contact-card .ic{width:60px;height:60px;border-radius:20px;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--primary),var(--primary-dark));box-shadow:0 12px 24px -10px rgba(142,23,70,.6)}
+.contact-card .ic.green{background:linear-gradient(145deg,#3ae086,var(--whatsapp-dark));box-shadow:0 12px 24px -10px rgba(37,211,102,.6)}
+.contact-card .ic svg{width:28px;height:28px}
+.contact-card b{font-family:var(--font-head);font-size:1.35rem;color:var(--dark);letter-spacing:.02em}
+.contact-card small{color:var(--muted);font-size:.85rem}
+.contact-card .btn{width:100%}
+.contact-card .alt-num{color:var(--muted);font-size:.82rem;margin-top:-4px}
+.contact-card .alt-num a{color:var(--primary-dark);font-weight:600;text-decoration:underline;text-decoration-color:rgba(194,24,91,.3);text-underline-offset:3px}
+.contact-card .alt-num a:hover{text-decoration-color:var(--primary)}
+.reminder{text-align:center;margin-top:30px;color:var(--muted);font-size:.92rem;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 22px}
+.reminder span{display:inline-flex;align-items:center;gap:8px}
+.reminder svg{width:16px;height:16px;color:var(--primary)}
+
+/* ========================================
+   19. FOOTER
+======================================== */
+
+footer{background:linear-gradient(180deg,#3a1a29,#2d2026);color:rgba(255,255,255,.85);padding:60px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px}
+.foot-brand .logo{color:#fff;font-size:1.25rem;margin-bottom:14px}
+.foot-brand p{color:rgba(255,255,255,.7);font-size:.95rem;max-width:320px}
+footer h4{font-family:var(--font-body);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;font-weight:600}
+footer li{margin-bottom:10px;font-size:.94rem}
+footer li a{transition:color var(--dur)}
+footer li a:hover{color:var(--gold-light)}
+footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;margin-right:8px;color:var(--gold)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding:20px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.82rem;color:rgba(255,255,255,.6)}
+.foot-bottom b{color:rgba(255,255,255,.85);font-weight:500}
+
+/* ========================================
+   20. FLOATING BUTTONS
+======================================== */
+.fab{
+  position:fixed;right:18px;z-index:1000;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  box-shadow:0 14px 30px -8px rgba(0,0,0,.35);transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.fab:hover{transform:translateY(-3px) scale(1.04)}
+.fab svg{width:28px;height:28px}
+.fab-wa{bottom:22px;background:linear-gradient(160deg,#3ae086,var(--whatsapp) 45%,var(--whatsapp-dark))}
+.fab-wa::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(37,211,102,.45);animation:pulse 2.2s ease-out infinite}
+.fab-call{bottom:92px;display:none;background:linear-gradient(160deg,#d8286d,var(--primary) 45%,var(--primary-dark))}
+@keyframes pulse{0%{transform:scale(.9);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+
+/* ========================================
+   21. RESPONSIVE
+======================================== */
+@media (max-width:1100px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .featured-grid{grid-template-columns:repeat(3,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:960px){
+  .nav-links{
+    position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;
+    background:rgba(255,250,245,.98);backdrop-filter:blur(16px);padding:14px 20px 22px;border-bottom:1px solid var(--border);
+    box-shadow:0 20px 40px -20px rgba(45,32,38,.3);
+    transform:translateY(-12px);opacity:0;visibility:hidden;transition:transform .3s var(--ease),opacity .3s,visibility .3s;
+  }
+  .nav-links.open{transform:none;opacity:1;visibility:visible}
+  .nav-links a{padding:14px 16px;font-size:1rem}
+  .hamburger{display:grid}
+  .nav-cta .btn-nav{display:none}
+  .hero{padding:40px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-grid > div:first-child{text-align:center}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .hero-actions,.hero-notes{justify-content:center}
+  .stage{min-height:440px}
+  .cake-card{width:min(88%,380px)}
+  .chip-a{left:0}.chip-b{right:0}
+  .benefit-grid,.celebrate-grid{grid-template-columns:repeat(2,1fr)}
+  .custom-grid,.about-grid,.loc-grid{grid-template-columns:1fr;gap:36px}
+  .custom-stage{min-height:360px;order:-1}
+  .about-card{right:8px;bottom:-14px}
+  .modal-panel{grid-template-columns:1fr;max-width:520px}
+  .modal-img{aspect-ratio:16/10}
+  .fab-call{display:grid}
+}
+@media (max-width:640px){
+  section{padding:56px 0}
+  .container{padding:0 16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .featured-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .card-body{padding:12px 12px 14px}
+  .card-body h3{font-size:.95rem}
+  .price{font-size:1.1rem}
+  .desc{display:none}
+  .card-actions{grid-template-columns:1fr}
+  .card-actions .btn{min-height:40px;font-size:.8rem}
+  .badge{font-size:.6rem;padding:5px 8px}
+  .benefit-grid,.celebrate-grid{grid-template-columns:1fr}
+  .contact .contact-grid{grid-template-columns:1fr;max-width:420px}
+  .banner-inner{padding:48px 22px;border-radius:24px}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .float-chip{padding:10px 12px;font-size:.78rem}
+  .float-chip .ic{width:32px;height:32px}
+  .chip-c{display:none}
+  .stage{min-height:400px}
+  .hero-notes{font-size:.82rem;gap:12px 18px}
+  .announce{font-size:.74rem}
+  .logo{font-size:1rem}
+  .modal-content{padding:24px 20px 22px}
+  .modal-content h3{font-size:1.4rem}
+}
+@media (max-width:380px){
+  .grid{gap:10px}
+  .card-actions .btn{padding:8px 6px;font-size:.76rem}
+  .hero-actions .btn{width:100%}
+}
+@media (hover:none){
+  .cake-card,.float-chip{animation-duration:9s}
+}
+
+/* ========================================
+   22. REDUCED MOTION
+======================================== */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .card{transform:none!important}
+  .cake-card{transform:none;animation:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========================================
+     ANNOUNCEMENT BAR
+======================================== -->
+<div class="announce" role="note">🎂 <strong>Cake orders should be placed 1 day before</strong> &nbsp;•&nbsp; <strong>3 KM FREE DELIVERY</strong></div>
+
+<!-- ========================================
+     NAVIGATION
+======================================== -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#home" class="logo" aria-label="King and Queen Cake — Home">
+      <span class="crown" aria-hidden="true">♛</span>
+      <span>KING &amp; QUEEN CAKE</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#brownies">Brownies</a></li>
+        <li><a href="#customized">Customized</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-nav" href="#" data-wa="general" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+        Order Now
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+<!-- ========================================
+     HERO
+======================================== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-deco deco-1" aria-hidden="true"></div>
+  <div class="hero-deco deco-2" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-label">Freshly Baked • Made For Your Special Moments</span>
+      <h1 id="hero-title">Sweet Moments, <span class="gradient-text">Beautifully Baked.</span></h1>
+      <p class="lead">Delicious cakes, customized creations, bento cakes and brownies made for your celebrations.</p>
+      <div class="hero-actions">
+        <a href="#cakes" class="btn btn-primary">
+          Explore Our Cakes
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#" data-wa="general" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <ul class="hero-notes" aria-label="Ordering information">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Cake orders 1 day in advance</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Free delivery within 3 KM</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Singular Street, Marthandam</li>
+      </ul>
+    </div>
+
+    <div class="stage" id="heroStage" aria-hidden="true">
+      <div class="stage-plate p1"></div>
+      <div class="stage-plate p2"></div>
+      <div class="cake-card" id="heroCake">
+        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80" alt="" width="900" height="1035" fetchpriority="high" onerror="handleImageError(this)">
+      </div>
+      <div class="float-chip chip-a">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9L8.4 14l.7-4L6.2 7.2l4-.6z"/><path d="M4 21h16"/></svg></span>
+        <span>Customized Cakes<small>Designer cakes for all occasions</small></span>
+      </div>
+      <div class="float-chip chip-b">
+        <span class="ic gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+        <span>3 KM Free Delivery<small>Marthandam</small></span>
+      </div>
+      <div class="float-chip chip-c">
+        <span class="ic green"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg></span>
+        <span>Order on WhatsApp<small>Quick &amp; easy ordering</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     BENEFITS
+======================================== -->
+<section class="benefits" aria-label="Why order from King and Queen Cake">
+  <div class="container">
+    <div class="benefit-grid">
+      <article class="benefit reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20v-7a6 6 0 0 1 12 0v7"/><path d="M12 7V4M9 5l1 2M15 5l-1 2"/><path d="M6 15c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 3 1"/></svg></div>
+        <h3>Customized Cakes</h3>
+        <p>Designer cakes for special occasions.</p>
+      </article>
+      <article class="benefit reveal" style="transition-delay:.08s">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+        <h3>3 KM Free Delivery</h3>
+        <p>Free delivery within 3 KM.</p>
+      </article>
+      <article class="benefit reveal" style="transition-delay:.16s">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg></div>
+        <h3>Order 1 Day Before</h3>
+        <p>Advance cake orders are required.</p>
+      </article>
+      <article class="benefit reveal" style="transition-delay:.24s">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7.5-4.6-7.5-10.4A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21Z"/><path d="M12 8V3M9.5 4.5 12 3l2.5 1.5"/></svg></div>
+        <h3>Made For Your Moments</h3>
+        <p>Cakes and brownies for celebrations.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FEATURED PRODUCTS
+======================================== -->
+<section class="featured" aria-labelledby="fav-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Loved by our customers</span>
+      <h2 id="fav-title">Customer Favourites</h2>
+      <p>Our most-ordered cakes and brownies. Tap any favourite to jump to its collection.</p>
+    </div>
+    <div class="featured-grid" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     PRODUCT CATALOG
+======================================== -->
+<section class="catalog" id="cakes" aria-labelledby="cat-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Menu &amp; Prices</span>
+      <h2 id="cat-title">Our Cake Collection</h2>
+      <p>Choose your favourite cake and order directly through WhatsApp.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <svg class="s-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label for="searchInput" class="sr-only">Search products</label>
+        <input type="search" id="searchInput" placeholder="Search cakes, brownies..." autocomplete="off">
+        <button class="clear" id="searchClear" aria-label="Clear search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter by category">
+        <button class="chip" data-cat="All" aria-pressed="true">All</button>
+        <button class="chip" data-cat="Classic Cakes" aria-pressed="false">Classic Cakes</button>
+        <button class="chip" data-cat="Chocolate Cakes" aria-pressed="false">Chocolate Cakes</button>
+        <button class="chip" data-cat="Special Cakes" aria-pressed="false">Special Cakes</button>
+        <button class="chip" data-cat="Bento Cakes" aria-pressed="false">Bento Cakes</button>
+        <button class="chip" data-cat="Brownies" aria-pressed="false">Brownies</button>
+      </div>
+    </div>
+
+    <p class="result-meta" id="resultMeta" aria-live="polite"></p>
+    <div class="grid" id="productGrid"></div>
+
+    <div class="empty" id="emptyState" role="status">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8.5 8.5l5 5M13.5 8.5l-5 5"/></svg></div>
+      <h3>No products found.</h3>
+      <p>Try another search or browse all categories.</p>
+      <button class="btn btn-primary" id="showAllBtn">Show All Products</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     BENTO CAKES
+======================================== -->
+<section class="sub-cat" id="bento" aria-labelledby="bento-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Small &amp; Sweet</span>
+      <h2 id="bento-title">Bento Cakes</h2>
+      <p>Choose your favourite. Available in Marthandam.</p>
+    </div>
+    <div class="info-strip reveal">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 20h12l1-11H5zM9 9V6a3 3 0 0 1 6 0v3"/></svg>Approx. 250g–350g</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Delivery charges may apply.</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Available in Marthandam</span>
+    </div>
+    <div class="grid" id="bentoGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     BROWNIES
+======================================== -->
+<section class="sub-cat brownies" id="brownies" aria-labelledby="brownie-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">All Type Brownie Available</span>
+      <h2 id="brownie-title">Brownies</h2>
+      <p>Rich, fudgy brownies for chocolate lovers. Every brownie: <strong>1 KG — ₹900</strong>.</p>
+    </div>
+    <div class="grid" id="brownieGrid"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     CUSTOMIZED CAKES
+======================================== -->
+<section class="custom" id="customized" aria-labelledby="custom-title">
+  <div class="container custom-grid">
+    <div class="reveal">
+      <span class="eyebrow">Designer Cakes For All Occasions</span>
+      <h2 id="custom-title">Customized Cakes</h2>
+      <p>Make your celebration special with a customized cake designed around your occasion. Customized and designer cakes are available for birthdays, celebrations and special moments.</p>
+      <div class="custom-tags" aria-label="Custom cake types">
+        <span>Customized Cakes</span><span>Designer Cakes</span><span>Birthday Cakes</span><span>Celebration Cakes</span>
+      </div>
+      <a href="#" data-wa="custom" class="btn btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+        Order a Custom Cake
+      </a>
+    </div>
+    <div class="custom-stage reveal" aria-hidden="true">
+      <div class="custom-img ci-1"><img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" onerror="handleImageError(this)"></div>
+      <div class="custom-img ci-2"><img src="https://images.unsplash.com/photo-1616690710400-a16d146927c5?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy" onerror="handleImageError(this)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CELEBRATION
+======================================== -->
+<section class="celebrate" aria-labelledby="cel-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Every occasion</span>
+      <h2 id="cel-title">Cakes For Every Celebration</h2>
+    </div>
+    <div class="celebrate-grid">
+      <article class="occasion reveal">
+        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21h16M5 21v-8h14v8M7 13V9h10v4"/><path d="M9 9V6M15 9V6M12 9V5M9 6c0-1 1-2 0-3M15 6c0-1 1-2 0-3M12 5c0-1 1-2 0-3"/></svg></div>
+        <h3>Birthday</h3>
+        <p>Make birthdays sweeter with a beautiful celebration cake.</p>
+      </article>
+      <article class="occasion reveal" style="transition-delay:.08s">
+        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="13" r="5"/><circle cx="15" cy="13" r="5"/><path d="M9 8l1.5-3h3L15 8"/></svg></div>
+        <h3>Anniversary</h3>
+        <p>Celebrate special moments with something delicious.</p>
+      </article>
+      <article class="occasion reveal" style="transition-delay:.16s">
+        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.3 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
+        <h3>Special Occasions</h3>
+        <p>Cakes made for memorable celebrations.</p>
+      </article>
+      <article class="occasion reveal" style="transition-delay:.24s">
+        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3>Customized</h3>
+        <p>Create a cake around your idea and occasion.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CUSTOM CAKE BANNER
+======================================== -->
+<section class="banner" aria-labelledby="banner-title">
+  <div class="container">
+    <div class="banner-inner reveal">
+      <div class="banner-orb orb-1" aria-hidden="true"></div>
+      <div class="banner-orb orb-2" aria-hidden="true"></div>
+      <h2 id="banner-title">Your Idea. Your Cake. Your Celebration.</h2>
+      <p>Customized and designer cakes available for special occasions.</p>
+      <a href="#" data-wa="custom" class="btn btn-gold" target="_blank" rel="noopener">
+        Discuss My Custom Cake
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     ABOUT
+======================================== -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-img reveal">
+      <div class="frame"><img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80" alt="Decorated celebration cake" loading="lazy" onerror="handleImageError(this)"></div>
+      <div class="about-card" aria-hidden="true">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span><b>Local bakery in Marthandam</b><small>Singular Street</small></span>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Our bakery</span>
+      <h2 id="about-title">About King &amp; Queen Cake</h2>
+      <p>King &amp; Queen Cake is a local bakery serving Marthandam with cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.</p>
+      <p>Browse our collection, choose your favourite, and place your order directly through WhatsApp or by phone. Cake orders should be placed at least 1 day in advance.</p>
+      <ul class="about-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Cakes, bento cakes &amp; brownies</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Customized &amp; designer cakes for all occasions</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Free delivery within 3 KM</li>
+      </ul>
+      <!-- Add genuine customer reviews here when provided by the bakery. -->
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     LOCATION
+======================================== -->
+<section class="location" aria-labelledby="loc-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find us</span>
+      <h2 id="loc-title">Visit King &amp; Queen Cake</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card reveal">
+        <h3>King &amp; Queen Cake</h3>
+        <div class="addr">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <p><b>Singular Street</b>Marthandam</p>
+        </div>
+        <div class="addr">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+          <p><b>3 KM Free Delivery</b>Free delivery within 3 KM.</p>
+        </div>
+        <div class="addr">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+          <p><b>Call us</b><a href="tel:7418432421">7418432421</a> &nbsp;•&nbsp; <a href="tel:8754716630">8754716630</a></p>
+        </div>
+        <!--
+          GET DIRECTIONS: The exact Google Maps URL for the bakery was not supplied.
+          The link below opens a Google Maps SEARCH for "King & Queen Cake, Marthandam".
+          Replace the href with the bakery's exact Google Maps share link when available.
+        -->
+        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=King%20%26%20Queen%20Cake%2C%20Marthandam" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:6px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8z"/></svg>
+          Get Directions
+        </a>
+      </div>
+      <div class="map-visual reveal" aria-hidden="true">
+        <div class="pin">
+          <div class="dot"><span>♛</span></div>
+          <div class="shadow"></div>
+          <b>Singular Street</b>
+          <small>Marthandam</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CONTACT
+======================================== -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2 id="contact-title">Ready to Order Your Cake?</h2>
+      <p>Call us or send us a WhatsApp message to place your order.</p>
+    </div>
+    <div class="contact-grid">
+      <article class="contact-card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <div><small>Call to order</small><br><b>7418432421</b></div>
+        <a class="btn btn-primary" href="tel:7418432421">Call Now</a>
+        <small class="alt-num">Also available on <a href="tel:8754716630">8754716630</a></small>
+      </article>
+      <article class="contact-card reveal" style="transition-delay:.08s">
+        <span class="ic green"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg></span>
+        <div><small>Message to order</small><br><b>WhatsApp</b></div>
+        <a class="btn btn-whatsapp" href="#" data-wa="general" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <small class="alt-num">Your cake details are pre-filled for you</small>
+      </article>
+    </div>
+    <div class="reminder">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Cake orders should be placed at least 1 day in advance.</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Free delivery within 3 KM.</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#home" class="logo"><span class="crown" aria-hidden="true">♛</span><span>KING &amp; QUEEN CAKE</span></a>
+        <p>Freshly baked cakes for every celebration.</p>
+        <!-- Add official social media links when provided by the bakery. -->
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#cakes">Cakes</a></li>
+          <li><a href="#bento">Bento Cakes</a></li>
+          <li><a href="#brownies">Brownies</a></li>
+          <li><a href="#customized">Customized Cakes</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:7418432421"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>7418432421</a></li>
+          <li><a href="tel:8754716630"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>8754716630</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Singular Street, Marthandam</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Good to know</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>3 KM Free Delivery</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Cake orders should be placed 1 day before.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20h12l1-11H5zM9 9V6a3 3 0 0 1 6 0v3"/></svg>Bento cakes: delivery charges may apply.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> <b>King &amp; Queen Cake</b>, Marthandam. All rights reserved.</span>
+      <span>LIN No: <b>22424084000142</b></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================================
+     FLOATING BUTTONS
+======================================== -->
+<a class="fab fab-wa" href="#" data-wa="general" target="_blank" rel="noopener" aria-label="Chat with King and Queen Cake on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+<a class="fab fab-call" href="tel:7418432421" aria-label="Call King and Queen Cake at 7418432421">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+</a>
+
+<!-- ========================================
+     PRODUCT MODAL
+======================================== -->
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Close product details">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal-img"><img id="modalImg" src="" alt="" onerror="handleImageError(this)"></div>
+    <div class="modal-content">
+      <span class="cat" id="modalCat"></span>
+      <h3 id="modalTitle"></h3>
+      <p class="desc" id="modalDesc"></p>
+      <div class="rows">
+        <div class="row"><span>Weight</span><b id="modalWeight" style="font-family:var(--font-body);font-size:.95rem;color:var(--text)"></b></div>
+        <div class="row"><span>Price</span><b id="modalPrice"></b></div>
+      </div>
+      <button class="btn btn-whatsapp btn-block" id="modalOrder">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+        Order Now on WhatsApp
+      </button>
+      <p class="modal-note" id="modalNote">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <span id="modalNoteText">Cake orders should be placed at least 1 day in advance. Free delivery within 3 KM.</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========================================
+     JAVASCRIPT
+======================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Business constants ---------- */
+  const WHATSAPP_NUMBER = '917418432421';
+  const BAKERY_NAME = 'King & Queen Cake';
+
+  /* ---------- Image helpers ---------- */
+  const U = (id, w = 640) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${w}&q=75`;
+
+  // Product-matched photo library (every ID verified live and visually reviewed)
+  const IMG = {
+    whiteForest:   U('1535141192574-5d4897c12636'), // white tiered cake with berries
+    redForest:     U('1621303837174-89787a7d4729'), // pink-red drip cake
+    blackForest:   U('1606890737304-57a1ca8a5b62'), // chocolate cake with cherries
+    rasmalai:      U('1524351199678-941a58a3df50'), // cream cheesecake slice
+    milkChip:      U('1588195538326-c5b1e9f80a1b'), // white cake with chocolate drip
+    chocoChip:     U('1550617931-e17a7b70dce2'),    // chocolate-chip topped cake
+    strawberry:    U('1611293388250-580b08c4a145'), // strawberry fraisier cake
+    blueberry:     U('1559620192-032c4bc4674e'),    // white cake with dark berries
+    mango:         U('1688458297155-228a3b1e5b49'), // mango cream cake with mango cubes
+    orange:        U('1542826438-bd32f43d626f'),    // orange glaze mousse cake
+    kiwi:          U('1744988037113-4440ec704f72'), // white frosted cake topped with kiwi slices
+    butterscotch:  U('1571877227200-a0d98ea607e9'), // caramel-toned layered cake
+    lychee:        U('1612809075925-230725151da2'), // pale cream cake with pastel flowers
+
+    chocotruffle:  U('1578985545062-69928b1d9587'), // chocolate drip cake with rosettes
+    swissChoc:     U('1541783245831-57d6fb0926d3'), // chocolate cake with glossy drip
+    chocoAlmond:   U('1626803775151-61d756612f97'), // chocolate tart with nuts
+    chocoVanilla:  U('1602351447937-745cb720612f'), // chocolate & cream layered mousse cake
+    chocoWalnut:   U('1618426703623-c1b335803e07'), // layered cake topped with walnuts
+    chocoOreo:     U('1557925923-cd4648e211a0'),    // Oreo cake
+
+    honeyAlmond:   U('1519915028121-7d3463d20b13'), // golden toasted meringue tart
+    bubble:        U('1562440499-64c9a111f713'),    // pink striped cake with macarons
+    redBee:        U('1568827999250-3f6afff96e66'), // naked cake with strawberries
+    bootsHoney:    U('1578775887804-699de7086ff9'), // golden cheesecake with berry compote
+    horlicks:      U('1571115177098-24ec42ed204d'), // malt-toned layered cake
+
+    bentoChoc:     U('1617305855058-336d24456869'), // small chocolate lava cake
+    bentoVanilla:  U('1464349095431-e9a21285b5f3'), // small sprinkle cake
+    bentoBF:       U('1605807646983-377bc5a76493'), // small chocolate cake with cherries
+    bentoMilkChoc: U('1612203985729-70726954388c'), // chocolate cupcakes
+    bentoWF:       U('1589119908995-c6837fa14848'), // small white cream cake with strawberries
+    bentoRV:       U('1602630209855-dceac223adfe'), // red velvet cake
+    bentoBS:       U('1586985289688-ca3cf47d3e6e'), // small caramel ombre cake
+    bentoStraw:    U('1530648672449-81f6c723e2f1'), // pink mini cakes with strawberries
+    bentoPine:     U('1628505048571-327399c9324c'), // pineapple cream cake
+    bentoBlue:     U('1533134242443-d4fd215305ad'), // blueberry cheesecake slice
+    bentoMango:    U('1642069251474-5cc71cfdf49b'), // mango cake slice
+
+    brClassic:     U('1607920591413-4ec007e70023'), // brownie triangles with caramel drizzle
+    brFudgy:       U('1590841609987-4ac211afdde1'), // dark fudgy brownie stack
+    brWalnut:      U('1624353365286-3f8d62daad51'), // nutty brownie with ice cream
+    brChocChip:    U('1570145820259-b5b80c5c8bd6'), // brownies with chocolate chips
+    brOreo:        U('1563805042-7684c019e1cb'),    // Oreo brownie dessert
+    brNutella:     U('1606313564200-e75d5e30476c'), // brownie stack with chocolate drizzle
+    brAlmond:      U('1564355808539-22fda35bed7e'), // brownie squares with nuts
+    brChocolate:   U('1515037893149-de7f840978e2'), // chocolate brownie slab cut into squares
+    brRedVelvet:   U('1614707267537-b85aaf00c4b7')  // red velvet with cream topping
+  };
+
+  // Brand placeholder (same image the early head handler applies on load errors)
+  const FALLBACK_IMAGE = (() => { const i = document.createElement('img'); window.handleImageError(i); return i.src; })();
+
+  /* ---------- Product data (source of truth: bakery catalog) ---------- */
+  let _id = 0;
+  const P = (name, category, weight, price, image, description) => ({
+    id: ++_id, name, category, weight,
+    price, priceDisplay: price === null ? 'Price on Request' : `₹${price}`,
+    image, description
+  });
+
+  const KG = '1 KG';
+  const BENTO_W = 'Approx. 250g–350g';
+
+  const products = [
+    // Classic Cakes
+    P('White Forest', 'Classic Cakes', KG, 600, IMG.whiteForest, 'A classic cake for celebrations.'),
+    P('Red Forest', 'Classic Cakes', KG, 750, IMG.redForest, 'A red-toned classic for special moments.'),
+    P('Black Forest', 'Classic Cakes', KG, 600, IMG.blackForest, 'A timeless favourite for every celebration.'),
+    P('Rasmalai', 'Classic Cakes', KG, 850, IMG.rasmalai, 'A rasmalai-inspired cake for festive moments.'),
+    P('Milk Chip', 'Classic Cakes', KG, 600, IMG.milkChip, 'A soft, creamy classic cake.'),
+    P('Choco Chip', 'Classic Cakes', KG, 600, IMG.chocoChip, 'A classic cake with a chocolate-chip touch.'),
+    P('Strawberry', 'Classic Cakes', KG, 650, IMG.strawberry, 'A fruity strawberry cake for celebrations.'),
+    P('Blueberry', 'Classic Cakes', KG, 650, IMG.blueberry, 'A fresh blueberry-inspired cake.'),
+    P('Mango', 'Classic Cakes', KG, 650, IMG.mango, 'A mango-inspired cake for sweet moments.'),
+    P('Orange', 'Classic Cakes', KG, 650, IMG.orange, 'A bright orange-inspired celebration cake.'),
+    P('Kiwi', 'Classic Cakes', KG, 650, IMG.kiwi, 'A kiwi-inspired cake with a fresh twist.'),
+    P('Butter Scotch', 'Classic Cakes', KG, 650, IMG.butterscotch, 'A butterscotch classic for every occasion.'),
+    P('Lychee', 'Classic Cakes', KG, 650, IMG.lychee, 'A lychee-inspired cake for special days.'),
+
+    // Chocolate Cakes
+    P('Chocotruffle', 'Chocolate Cakes', KG, 750, IMG.chocotruffle, 'A rich chocolate-inspired cake for special moments.'),
+    P('Swiss Chocolate', 'Chocolate Cakes', KG, 650, IMG.swissChoc, 'A smooth chocolate cake for chocolate lovers.'),
+    P('Choco Almond', 'Chocolate Cakes', KG, 750, IMG.chocoAlmond, 'Chocolate cake with an almond touch.'),
+    P('Choco Vanilla', 'Chocolate Cakes', KG, 750, IMG.chocoVanilla, 'A chocolate and vanilla combination cake.'),
+    P('Choco Walnut', 'Chocolate Cakes', KG, 850, IMG.chocoWalnut, 'Chocolate cake with a walnut touch.'),
+    P('Choco Oreo', 'Chocolate Cakes', KG, 800, IMG.chocoOreo, 'A chocolate cake with an Oreo-inspired twist.'),
+
+    // Special Cakes
+    P('Honey Almond', 'Special Cakes', KG, null, IMG.honeyAlmond, 'A special honey and almond inspired cake.'),
+    P('Bubble Cake', 'Special Cakes', KG, null, IMG.bubble, 'A special-occasion cake with a playful look.'),
+    P('Red Bee', 'Special Cakes', KG, 900, IMG.redBee, 'A special cake for memorable celebrations.'),
+    P('Boots Honey', 'Special Cakes', KG, 850, IMG.bootsHoney, 'A special honey-inspired cake.'),
+    P('Horlicks Kicate', 'Special Cakes', KG, 900, IMG.horlicks, 'A special malt-inspired celebration cake.'),
+
+    // Bento Cakes
+    P('Chocolate', 'Bento Cakes', BENTO_W, 250, IMG.bentoChoc, 'A small chocolate bento cake.'),
+    P('Vanilla', 'Bento Cakes', BENTO_W, 250, IMG.bentoVanilla, 'A small vanilla bento cake.'),
+    P('Black Forest', 'Bento Cakes', BENTO_W, 250, IMG.bentoBF, 'A small black forest bento cake.'),
+    P('Milk Chocolate', 'Bento Cakes', BENTO_W, 250, IMG.bentoMilkChoc, 'A small milk chocolate bento cake.'),
+    P('White Forest', 'Bento Cakes', BENTO_W, 250, IMG.bentoWF, 'A small white forest bento cake.'),
+    P('Red Velvet', 'Bento Cakes', BENTO_W, 300, IMG.bentoRV, 'A small red velvet bento cake.'),
+    P('Butterscotch', 'Bento Cakes', BENTO_W, 300, IMG.bentoBS, 'A small butterscotch bento cake.'),
+    P('Strawberry', 'Bento Cakes', BENTO_W, 300, IMG.bentoStraw, 'A small strawberry bento cake.'),
+    P('Pineapple', 'Bento Cakes', BENTO_W, 300, IMG.bentoPine, 'A small pineapple bento cake.'),
+    P('Blueberry', 'Bento Cakes', BENTO_W, 300, IMG.bentoBlue, 'A small blueberry bento cake.'),
+    P('Mango', 'Bento Cakes', BENTO_W, 300, IMG.bentoMango, 'A small mango bento cake.'),
+
+    // Brownies — all 1 KG, ₹900
+    P('Classic Brownie', 'Brownies', KG, 900, IMG.brClassic, 'A delicious brownie option for chocolate lovers.'),
+    P('Fudgy Brownie', 'Brownies', KG, 900, IMG.brFudgy, 'A rich, fudgy brownie for chocolate lovers.'),
+    P('Walnut Brownie', 'Brownies', KG, 900, IMG.brWalnut, 'A brownie with a walnut touch.'),
+    P('Choco Chip Brownie', 'Brownies', KG, 900, IMG.brChocChip, 'A brownie with chocolate chips.'),
+    P('Oreo Brownie', 'Brownies', KG, 900, IMG.brOreo, 'A brownie with an Oreo-inspired twist.'),
+    P('Nutella Brownie', 'Brownies', KG, 900, IMG.brNutella, 'A brownie with a hazelnut-chocolate twist.'),
+    P('Almond Brownie', 'Brownies', KG, 900, IMG.brAlmond, 'A brownie with an almond touch.'),
+    P('Chocolate Brownie', 'Brownies', KG, 900, IMG.brChocolate, 'A classic chocolate brownie.'),
+    P('Red Velvet Brownie', 'Brownies', KG, 900, IMG.brRedVelvet, 'A red velvet-inspired brownie.')
+  ];
+
+  const FEATURED = [
+    { name: 'Black Forest', category: 'Classic Cakes' },
+    { name: 'Chocotruffle', category: 'Chocolate Cakes' },
+    { name: 'Red Velvet', category: 'Bento Cakes' },
+    { name: 'Strawberry', category: 'Classic Cakes' },
+    { name: 'Bento Cake', category: 'Bento Cakes', image: IMG.bentoChoc },
+    { name: 'Brownies', category: 'Brownies', image: IMG.brClassic }
+  ];
+
+  /* ---------- DOM refs ---------- */
+  const $ = (s, r = document) => r.querySelector(s);
+  const productGrid = $('#productGrid');
+  const bentoGrid = $('#bentoGrid');
+  const brownieGrid = $('#brownieGrid');
+  const featuredGrid = $('#featuredGrid');
+  const emptyState = $('#emptyState');
+  const resultMeta = $('#resultMeta');
+  const searchInput = $('#searchInput');
+  const searchClear = $('#searchClear');
+  const filters = $('#filters');
+
+  let activeCategory = 'All';
+  let searchTerm = '';
+
+  /* ---------- Utilities ---------- */
+  const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const altFor = (p) => `${p.name} ${p.weight} ${p.category === 'Brownies' ? 'brownie' : 'cake'}`;
+  const WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>';
+
+  /* ---------- WhatsApp ---------- */
+  function waUrl(message) {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+  const MSG_GENERAL = `Hello ${BAKERY_NAME}, I would like to enquire about your cakes.`;
+  const MSG_CUSTOM = `Hello ${BAKERY_NAME},\n\nI would like to enquire about a customized cake.\n\nPlease share the available options.`;
+
+  function orderMessage(p) {
+    return `Hello ${BAKERY_NAME},\n\nI would like to order:\n\nProduct: ${p.name}\nWeight: ${p.weight}\nPrice: ${p.priceDisplay}\n\nPlease confirm availability.`;
+  }
+
+  function orderProduct(id) {
+    const p = products.find(x => x.id === id);
+    if (!p) return;
+    window.open(waUrl(orderMessage(p)), '_blank', 'noopener');
+  }
+
+  // Wire all static WhatsApp links (general / custom)
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    a.href = waUrl(a.dataset.wa === 'custom' ? MSG_CUSTOM : MSG_GENERAL);
+  });
+
+  /* ---------- Rendering ---------- */
+  function cardHTML(p) {
+    const priceClass = p.price === null ? 'price req' : 'price';
+    const badge = p.category === 'Brownies' ? '<span class="badge gold">1 KG • ₹900</span>'
+      : p.category === 'Bento Cakes' ? '<span class="badge">Bento</span>'
+      : `<span class="badge">${esc(p.category.replace(' Cakes', ''))}</span>`;
+    return `
+      <article class="card" data-id="${p.id}">
+        <button class="card-media" type="button" data-view="${p.id}" aria-label="View details of ${esc(p.name)}">
+          ${badge}
+          <img src="${p.image}" alt="${esc(altFor(p))}" loading="lazy" width="640" height="640" onerror="handleImageError(this)">
+        </button>
+        <div class="card-body">
+          <h3>${esc(p.name)}</h3>
+          <div class="card-meta">
+            <span class="weight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 20h12l1-11H5zM9 9V6a3 3 0 0 1 6 0v3"/></svg>${esc(p.weight)}</span>
+            <span class="${priceClass}">${esc(p.priceDisplay)}</span>
+          </div>
+          <p class="desc">${esc(p.description)}</p>
+          <div class="card-actions">
+            <button class="btn btn-outline" type="button" data-view="${p.id}">View Details</button>
+            <button class="btn btn-whatsapp" type="button" data-order="${p.id}">${WA_ICON}Order Now</button>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function renderGrid(container, list) {
+    container.innerHTML = list.map(cardHTML).join('');
+    attachTilt(container);
+  }
+
+  function getFiltered() {
+    const q = searchTerm.trim().toLowerCase();
+    return products.filter(p => {
+      const catOk = activeCategory === 'All' || p.category === activeCategory;
+      const qOk = !q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q);
+      return catOk && qOk;
+    });
+  }
+
+  function renderProducts() {
+    const list = getFiltered();
+    renderGrid(productGrid, list);
+    const none = list.length === 0;
+    emptyState.classList.toggle('show', none);
+    productGrid.style.display = none ? 'none' : '';
+    resultMeta.textContent = none ? '' :
+      `Showing ${list.length} ${list.length === 1 ? 'product' : 'products'}` +
+      (activeCategory !== 'All' ? ` in ${activeCategory}` : '') +
+      (searchTerm.trim() ? ` for “${searchTerm.trim()}”` : '');
+  }
+
+  function renderFeaturedProducts() {
+    featuredGrid.innerHTML = FEATURED.map(f => {
+      const p = products.find(x => x.name === f.name && x.category === f.category);
+      const img = f.image || (p ? p.image : FALLBACK_IMAGE);
+      const label = p ? `${p.category}` : f.category;
+      return `
+        <button class="feat reveal" type="button" data-featured="${esc(f.category)}" aria-label="${esc(f.name)} — see ${esc(label)}">
+          <img src="${img}" alt="${esc(f.name)}" loading="lazy" width="480" height="576" onerror="handleImageError(this)">
+          <span class="cap"><strong>${esc(f.name)}</strong><span>${esc(label)}</span></span>
+        </button>`;
+    }).join('');
+  }
+
+  /* ---------- Filters & search ---------- */
+  function filterProducts(category) {
+    activeCategory = category;
+    filters.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', String(c.dataset.cat === category)));
+    renderProducts();
+  }
+
+  function searchProducts(term) {
+    searchTerm = term;
+    searchClear.classList.toggle('show', term.length > 0);
+    renderProducts();
+  }
+
+  filters.addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (chip) filterProducts(chip.dataset.cat);
+  });
+
+  let searchTimer;
+  searchInput.addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => searchProducts(e.target.value), 90);
+  });
+  searchClear.addEventListener('click', () => { searchInput.value = ''; searchProducts(''); searchInput.focus(); });
+
+  $('#showAllBtn').addEventListener('click', () => {
+    searchInput.value = '';
+    searchTerm = '';
+    searchClear.classList.remove('show');
+    filterProducts('All');
+  });
+
+  featuredGrid.addEventListener('click', e => {
+    const btn = e.target.closest('[data-featured]');
+    if (!btn) return;
+    searchInput.value = ''; searchTerm = ''; searchClear.classList.remove('show');
+    filterProducts(btn.dataset.featured);
+    document.getElementById('cakes').scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  /* ---------- Card actions (delegated) ---------- */
+  document.addEventListener('click', e => {
+    const view = e.target.closest('[data-view]');
+    if (view) { openProductModal(Number(view.dataset.view)); return; }
+    const order = e.target.closest('[data-order]');
+    if (order) { orderProduct(Number(order.dataset.order)); }
+  });
+
+  /* ---------- Modal ---------- */
+  const modal = $('#productModal');
+  const modalImg = $('#modalImg');
+  const modalCat = $('#modalCat');
+  const modalTitle = $('#modalTitle');
+  const modalDesc = $('#modalDesc');
+  const modalWeight = $('#modalWeight');
+  const modalPrice = $('#modalPrice');
+  const modalOrder = $('#modalOrder');
+  const modalNoteText = $('#modalNoteText');
+  let lastFocus = null;
+  let currentProductId = null;
+
+  function openProductModal(id) {
+    const p = products.find(x => x.id === id);
+    if (!p) return;
+    currentProductId = id;
+    lastFocus = document.activeElement;
+    modalImg.removeAttribute('data-fallback-applied');
+    modalImg.src = p.image.replace('w=640&h=640', 'w=900&h=900');
+    modalImg.alt = altFor(p);
+    modalCat.textContent = p.category;
+    modalTitle.textContent = p.name;
+    modalDesc.textContent = p.description;
+    modalWeight.textContent = p.weight;
+    modalPrice.textContent = p.priceDisplay;
+    modalPrice.classList.toggle('req', p.price === null);
+    modalNoteText.textContent = p.category === 'Bento Cakes'
+      ? 'Bento cakes: Approx. 250g–350g. Delivery charges may apply. Cake orders should be placed at least 1 day in advance.'
+      : 'Cake orders should be placed at least 1 day in advance. Free delivery within 3 KM.';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    $('#modalClose').focus();
+  }
+
+  function closeProductModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    currentProductId = null;
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+
+  modalOrder.addEventListener('click', () => { if (currentProductId) orderProduct(currentProductId); });
+  $('#modalClose').addEventListener('click', closeProductModal);
+  $('#modalBackdrop').addEventListener('click', closeProductModal);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeProductModal();
+    // basic focus trap
+    if (e.key === 'Tab' && modal.classList.contains('open')) {
+      const f = modal.querySelectorAll('button, [href], input, [tabindex]:not([tabindex="-1"])');
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ---------- Mobile menu ---------- */
+  const hamburger = $('#hamburger');
+  const navLinks = $('#navLinks');
+
+  function toggleMobileMenu(force) {
+    const open = typeof force === 'boolean' ? force : !navLinks.classList.contains('open');
+    navLinks.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+    hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  hamburger.addEventListener('click', () => toggleMobileMenu());
+  navLinks.addEventListener('click', e => { if (e.target.closest('a')) toggleMobileMenu(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && navLinks.classList.contains('open')) { toggleMobileMenu(false); hamburger.focus(); } });
+  document.addEventListener('click', e => {
+    if (navLinks.classList.contains('open') && !e.target.closest('#nav')) toggleMobileMenu(false);
+  });
+
+  /* ---------- Sticky nav shadow + active link ---------- */
+  const nav = $('#nav');
+  const sections = ['home', 'cakes', 'brownies', 'customized', 'about', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+  const linkMap = new Map([...navLinks.querySelectorAll('a')].map(a => [a.getAttribute('href').slice(1), a]));
+
+  function onScroll() {
+    nav.classList.toggle('scrolled', window.scrollY > 8);
+    let current = 'home';
+    const y = window.scrollY + nav.offsetHeight + 120;
+    for (const s of sections) if (s.offsetTop <= y) current = s.id;
+    linkMap.forEach((a, id) => a.classList.toggle('active', id === current));
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------- Motion: 3D tilt + scroll reveal ---------- */
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  function attachTilt(scope) {
+    if (prefersReduced || !canHover) return;
+    scope.querySelectorAll('.card').forEach(card => {
+      if (card.dataset.tilt) return;
+      card.dataset.tilt = '1';
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty('--ry', `${px * 10}deg`);
+        card.style.setProperty('--rx', `${-py * 10}deg`);
+        card.style.transform = `translateY(-8px) rotateX(var(--rx)) rotateY(var(--ry)) translateZ(0)`;
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // Hero cake follows pointer subtly
+  const stage = $('#heroStage');
+  const heroCake = $('#heroCake');
+  if (stage && heroCake && !prefersReduced && canHover) {
+    stage.addEventListener('pointermove', e => {
+      const r = stage.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      heroCake.style.transform = `rotateY(${-10 + px * 16}deg) rotateX(${6 - py * 12}deg)`;
+    });
+    stage.addEventListener('pointerleave', () => { heroCake.style.transform = ''; });
+  }
+
+  function initReveal() {
+    const els = document.querySelectorAll('.reveal');
+    if (prefersReduced || !('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('in')); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => io.observe(el));
+  }
+
+  /* ---------- Init ---------- */
+  $('#year').textContent = new Date().getFullYear();
+  renderFeaturedProducts();
+  renderProducts();
+  renderGrid(bentoGrid, products.filter(p => p.category === 'Bento Cakes'));
+  renderGrid(brownieGrid, products.filter(p => p.category === 'Brownies'));
+  initReveal();
+  onScroll();
+})();
+</script>
+</body>
+</html>
