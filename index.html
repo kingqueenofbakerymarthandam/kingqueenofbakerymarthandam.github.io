@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>King &amp; Queen Cake | Cakes &amp; Brownies in Marthandam</title>
-<meta name="description" content="King & Queen Cake in Marthandam offers cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>👑King 👸Queen Of Bakery Marthandam | Cakes &amp; Brownies in Marthandam</title>
+<meta name="description" content="👑King 👸Queen Of Bakery Marthandam offers cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.">
 <meta name="theme-color" content="#c2185b">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="King & Queen Cake | Cakes & Brownies in Marthandam">
+<meta property="og:title" content="👑King 👸Queen Of Bakery Marthandam | Cakes & Brownies in Marthandam">
 <meta property="og:description" content="Cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions. Free delivery within 3 KM. Order on WhatsApp.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=1200&h=630&q=75">
 <meta property="og:locale" content="en_IN">
@@ -24,7 +24,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Bakery",
-  "name": "King & Queen Cake",
+  "name": "👑King 👸Queen Of Bakery Marthandam",
   "telephone": "+917418432421",
   "address": {
     "@type": "PostalAddress",
@@ -42,8 +42,10 @@
 window.handleImageError = function (img) {
   if (img.dataset.fallbackApplied) return;
   img.dataset.fallbackApplied = '1';
+  img.removeAttribute('srcset');
+  img.removeAttribute('sizes');
   img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1f6"/><stop offset="1" stop-color="#f8dce7"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><g fill="none" stroke="#c2185b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(200 205)"><path d="M-95 30h190M-80 30v-45q0-20 20-20h120q20 0 20 20v45"/><path d="M-40-35v-30M0-35v-38M40-35v-30"/><path d="M-80-10c15 12 30 12 45 0s30-12 45 0 30 12 45 0 25-6 25-6"/></g><text x="200" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#8e1746">King &amp; Queen Cake</text></svg>'
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1f6"/><stop offset="1" stop-color="#f8dce7"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><g fill="none" stroke="#c2185b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(200 205)"><path d="M-95 30h190M-80 30v-45q0-20 20-20h120q20 0 20 20v45"/><path d="M-40-35v-30M0-35v-38M40-35v-30"/><path d="M-80-10c15 12 30 12 45 0s30-12 45 0 30 12 45 0 25-6 25-6"/></g><text x="200" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#8e1746">👑King 👸Queen Of Bakery Marthandam</text></svg>'
   );
 };
 </script>
@@ -53,11 +55,11 @@ window.handleImageError = function (img) {
    1. RESET
 ======================================== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav-h) + 12px)}
 img,svg{display:block;max-width:100%}
 button,input{font:inherit;color:inherit}
-button{background:none;border:0;cursor:pointer}
-a{color:inherit;text-decoration:none}
+button{background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
 ul{list-style:none}
 
 /* ========================================
@@ -73,6 +75,7 @@ ul{list-style:none}
   --gold:#d6a63a;
   --gold-light:#f6e4b5;
   --gold-dark:#a9791c;
+  --gold-text:#8a6212;
   --dark:#2d2026;
   --text:#3b2c32;
   --muted:#756970;
@@ -96,6 +99,7 @@ ul{list-style:none}
   --dur:.35s;
   --nav-h:72px;
   --max-w:1240px;
+  --safe-b:env(safe-area-inset-bottom,0px);
 }
 
 /* ========================================
@@ -146,9 +150,10 @@ h3{font-size:1.2rem}
   color:#fff;text-align:center;font-size:.82rem;font-weight:500;padding:9px 16px;letter-spacing:.01em;
 }
 .announce strong{color:var(--gold-light);font-weight:600}
+.announce-more{opacity:.9}
 
 .nav{
-  position:sticky;top:0;z-index:900;height:var(--nav-h);
+  position:sticky;top:0;z-index:1100;height:var(--nav-h);
   background:rgba(255,250,245,.82);
   backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
   border-bottom:1px solid var(--border);
@@ -156,7 +161,7 @@ h3{font-size:1.2rem}
 }
 .nav.scrolled{box-shadow:0 8px 30px rgba(45,32,38,.08)}
 .nav .container{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:1.12rem;color:var(--primary-dark);letter-spacing:.02em;white-space:nowrap}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;font-family:var(--font-head);font-weight:700;font-size:1.12rem;color:var(--primary-dark);letter-spacing:.02em;white-space:nowrap}
 .logo .crown{
   width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:1.25rem;color:#fff;
   background:linear-gradient(145deg,var(--primary),var(--primary-dark));
@@ -164,15 +169,17 @@ h3{font-size:1.2rem}
   transform:translateZ(0);
 }
 .nav-links{display:flex;align-items:center;gap:6px}
-.nav-links a{padding:10px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:.93rem;color:var(--text);transition:background var(--dur),color var(--dur)}
-.nav-links a:hover,.nav-links a.active{background:var(--primary-light);color:var(--primary-dark)}
+.nav-links a:not(.btn){padding:10px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:.93rem;color:var(--text);transition:background var(--dur),color var(--dur)}
+.nav-links a:not(.btn):hover,.nav-links a.active{background:var(--primary-light);color:var(--primary-dark)}
 .nav-cta{display:flex;align-items:center;gap:10px}
-.hamburger{display:none;width:46px;height:46px;border-radius:12px;place-items:center;background:var(--white);box-shadow:var(--shadow-sm)}
-.hamburger span{display:block;width:22px;height:2px;background:var(--primary-dark);border-radius:2px;transition:transform .3s var(--ease),opacity .3s}
-.hamburger span+span{margin-top:5px}
-.hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-menu-cta{display:none}
+.hamburger{display:none;position:relative;width:46px;height:46px;border-radius:12px;place-items:center;background:var(--white);box-shadow:var(--shadow-sm)}
+.hamburger span{position:absolute;left:50%;top:50%;display:block;width:22px;height:2px;background:var(--primary-dark);border-radius:2px;transform:translate(-50%,-50%);transition:transform .3s var(--ease),opacity .3s}
+.hamburger span:nth-child(1){transform:translate(-50%,-50%) translateY(-7px)}
+.hamburger span:nth-child(3){transform:translate(-50%,-50%) translateY(7px)}
+.hamburger[aria-expanded="true"] span:nth-child(1){transform:translate(-50%,-50%) rotate(45deg)}
 .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hamburger[aria-expanded="true"] span:nth-child(3){transform:translate(-50%,-50%) rotate(-45deg)}
 
 /* ========================================
    6. BUTTONS
@@ -213,7 +220,7 @@ h3{font-size:1.2rem}
     linear-gradient(180deg,#fff6f9,var(--cream));
 }
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;z-index:1}
-.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);background:#fff;border:1px solid var(--border);border-radius:var(--radius-pill);padding:8px 16px;box-shadow:var(--shadow-sm);margin-bottom:22px}
+.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);background:#fff;border:1px solid var(--border);border-radius:var(--radius-pill);padding:8px 16px;box-shadow:var(--shadow-sm);margin-bottom:22px}
 .hero-label::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(214,166,58,.22)}
 .hero p.lead{font-size:1.1rem;color:var(--muted);max-width:520px;margin:20px 0 30px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px}
@@ -262,7 +269,7 @@ h3{font-size:1.2rem}
 .float-chip .ic.gold{background:linear-gradient(145deg,#f0cf7a,var(--gold-dark))}
 .float-chip .ic.green{background:linear-gradient(145deg,#3ae086,var(--whatsapp-dark))}
 .float-chip .ic svg{width:20px;height:20px}
-.float-chip small{display:block;font-weight:400;color:var(--muted);font-size:.74rem}
+.float-chip small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
 .chip-a{top:6%;left:-4%;animation-delay:-2s}
 .chip-b{bottom:18%;right:0;animation-delay:-4s}
 .chip-c{bottom:-2%;left:8%;animation-delay:-1s}
@@ -318,17 +325,19 @@ h3{font-size:1.2rem}
 .search input{
   width:100%;min-height:54px;padding:14px 52px 14px 50px;border-radius:var(--radius-pill);
   border:1.5px solid var(--border);background:var(--white);box-shadow:var(--shadow-sm);
-  font-size:.98rem;color:var(--text);transition:border-color var(--dur),box-shadow var(--dur);
+  font-size:1rem;color:var(--text);transition:border-color var(--dur),box-shadow var(--dur);
 }
+.search input::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
 .search input::placeholder{color:#a19599}
 .search input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(194,24,91,.12),var(--shadow-sm)}
 .search .s-ic{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--primary)}
-.search .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;display:none;place-items:center;color:var(--muted)}
+.search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:none;place-items:center;color:var(--muted)}
 .search .clear.show{display:grid}
 .search .clear:hover{background:var(--pink-light);color:var(--primary-dark)}
 .filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.filters-wrap{width:100%}
 .chip{
-  min-height:42px;padding:9px 18px;border-radius:var(--radius-pill);font-weight:500;font-size:.88rem;
+  min-height:44px;padding:9px 18px;border-radius:var(--radius-pill);font-weight:500;font-size:.88rem;
   background:var(--white);color:var(--text);border:1.5px solid var(--border);box-shadow:var(--shadow-sm);
   transition:all var(--dur) var(--ease);
 }
@@ -364,10 +373,10 @@ h3{font-size:1.2rem}
 .weight{font-size:.78rem;color:var(--muted);display:inline-flex;align-items:center;gap:5px}
 .weight svg{width:13px;height:13px}
 .price{font-family:var(--font-head);font-weight:700;font-size:1.3rem;color:var(--primary-dark);line-height:1}
-.price.req{font-family:var(--font-body);font-weight:600;font-size:.82rem;color:var(--gold-dark)}
+.price.req{font-family:var(--font-body);font-weight:600;font-size:.82rem;color:var(--gold-text)}
 .desc{font-size:.85rem;color:var(--muted);flex:1;margin-bottom:14px}
 .card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.card-actions .btn{min-height:42px;padding:9px 10px;font-size:.82rem}
+.card-actions .btn{min-height:44px;padding:9px 10px;font-size:.82rem}
 
 /* Empty state */
 .empty{display:none;text-align:center;padding:56px 20px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);max-width:560px;margin:0 auto}
@@ -405,7 +414,7 @@ h3{font-size:1.2rem}
 .modal-content .rows{display:grid;gap:10px;margin:14px 0 18px}
 .modal-content .row{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--cream);border-radius:var(--radius-sm);font-size:.92rem}
 .modal-content .row b{font-family:var(--font-head);color:var(--primary-dark);font-size:1.15rem}
-.modal-content .row b.req{font-family:var(--font-body);font-size:.85rem;color:var(--gold-dark)}
+.modal-content .row b.req{font-family:var(--font-body);font-size:.85rem;color:var(--gold-text)}
 .modal-content .desc{font-size:.95rem;margin-bottom:20px}
 .modal-note{font-size:.8rem;color:var(--muted);margin-top:14px;display:flex;gap:8px;align-items:flex-start}
 .modal-note svg{width:16px;height:16px;flex:none;color:var(--primary);margin-top:2px}
@@ -414,6 +423,7 @@ h3{font-size:1.2rem}
 .modal-close svg{width:20px;height:20px}
 @keyframes fade{from{opacity:0}}
 @keyframes pop{from{opacity:0;transform:translateY(24px) scale(.96)}}
+@keyframes sheet{from{transform:translateY(40px);opacity:.6}}
 
 /* ========================================
    13. CUSTOMIZED SECTION
@@ -507,6 +517,7 @@ h3{font-size:1.2rem}
 .addr .ic svg{width:22px;height:22px}
 .addr p{color:var(--text);font-size:1rem;line-height:1.5}
 .addr p b{color:var(--dark);display:block}
+.addr p a{display:inline-block;padding:10px 2px;min-height:44px;line-height:1.5;font-weight:600;color:var(--primary-dark)}
 .map-visual{
   position:relative;border-radius:var(--radius);overflow:hidden;min-height:320px;
   background:
@@ -542,7 +553,7 @@ h3{font-size:1.2rem}
 .contact-card small{color:var(--muted);font-size:.85rem}
 .contact-card .btn{width:100%}
 .contact-card .alt-num{color:var(--muted);font-size:.82rem;margin-top:-4px}
-.contact-card .alt-num a{color:var(--primary-dark);font-weight:600;text-decoration:underline;text-decoration-color:rgba(194,24,91,.3);text-underline-offset:3px}
+.contact-card .alt-num a{display:inline-block;padding:12px 4px;min-height:44px;color:var(--primary-dark);font-weight:600;text-decoration:underline;text-decoration-color:rgba(194,24,91,.3);text-underline-offset:3px}
 .contact-card .alt-num a:hover{text-decoration-color:var(--primary)}
 .reminder{text-align:center;margin-top:30px;color:var(--muted);font-size:.92rem;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 22px}
 .reminder span{display:inline-flex;align-items:center;gap:8px}
@@ -556,9 +567,10 @@ footer{background:linear-gradient(180deg,#3a1a29,#2d2026);color:rgba(255,255,255
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px}
 .foot-brand .logo{color:#fff;font-size:1.25rem;margin-bottom:14px}
 .foot-brand p{color:rgba(255,255,255,.7);font-size:.95rem;max-width:320px}
-footer h4{font-family:var(--font-body);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;font-weight:600}
-footer li{margin-bottom:10px;font-size:.94rem}
-footer li a{transition:color var(--dur)}
+footer h3{font-family:var(--font-body);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;font-weight:600}
+footer li{margin-bottom:2px;font-size:.94rem}
+footer li a{display:inline-block;padding:10px 0;min-height:44px;transition:color var(--dur)}
+footer li:not(:has(a)){padding:10px 0}
 footer li a:hover{color:var(--gold-light)}
 footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;margin-right:8px;color:var(--gold)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding:20px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.82rem;color:rgba(255,255,255,.6)}
@@ -587,23 +599,29 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:960px){
+  :root{--nav-h:64px}
   .nav-links{
-    position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;
-    background:rgba(255,250,245,.98);backdrop-filter:blur(16px);padding:14px 20px 22px;border-bottom:1px solid var(--border);
+    position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;
+    background:var(--cream);
+    padding:12px 16px calc(18px + var(--safe-b));border-bottom:1px solid var(--border);
     box-shadow:0 20px 40px -20px rgba(45,32,38,.3);
+    max-height:calc(100dvh - var(--nav-h));overflow-y:auto;
     transform:translateY(-12px);opacity:0;visibility:hidden;transition:transform .3s var(--ease),opacity .3s,visibility .3s;
   }
   .nav-links.open{transform:none;opacity:1;visibility:visible}
-  .nav-links a{padding:14px 16px;font-size:1rem}
+  .nav-links a:not(.btn){display:block;padding:14px 16px;font-size:1.02rem;min-height:48px}
+  .nav-menu-cta{display:block;margin-top:10px;padding-top:12px;border-top:1px solid var(--border)}
+  .nav-menu-cta .btn{width:100%}
   .hamburger{display:grid}
   .nav-cta .btn-nav{display:none}
+  .logo .crown{width:36px;height:36px}
   .hero{padding:40px 0 60px}
   .hero-grid{grid-template-columns:1fr;gap:48px}
   .hero-grid > div:first-child{text-align:center}
   .hero p.lead{margin-left:auto;margin-right:auto}
   .hero-actions,.hero-notes{justify-content:center}
-  .stage{min-height:440px}
-  .cake-card{width:min(88%,380px)}
+  .stage{min-height:420px}
+  .cake-card{width:min(70%,340px)}
   .chip-a{left:0}.chip-b{right:0}
   .benefit-grid,.celebrate-grid{grid-template-columns:repeat(2,1fr)}
   .custom-grid,.about-grid,.loc-grid{grid-template-columns:1fr;gap:36px}
@@ -614,18 +632,58 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   .fab-call{display:grid}
 }
 @media (max-width:640px){
+  /* Long brand name: let text shrink and wrap without pushing controls off-screen */
+  .nav .container{gap:10px}
+  .nav .logo{flex:1 1 auto;min-width:0;gap:8px;font-size:.82rem;letter-spacing:0;white-space:normal}
+  .nav .logo .crown{width:34px;height:34px;flex:0 0 34px}
+  .nav .logo > span:last-child{min-width:0;line-height:1.15}
+  .nav-cta,.hamburger{flex:0 0 auto}
+  .foot-grid,.foot-grid > *,.foot-brand{min-width:0}
+  .foot-brand .logo{max-width:100%;gap:8px;font-size:1rem;line-height:1.25;white-space:normal;align-items:flex-start}
+  .foot-brand .logo .crown{flex:0 0 36px}
+  .foot-brand .logo > span:last-child{min-width:0;white-space:normal;overflow-wrap:break-word}
+  footer li a{min-width:44px}
+  /* Compact right-side contact controls; 52px targets with a 10px gap */
+  .fab{
+    right:calc(12px + env(safe-area-inset-right,0px));width:52px;height:52px;
+    box-shadow:0 10px 24px -8px rgba(0,0,0,.34);
+  }
+  .fab,.fab-wa,.fab-call{display:grid}
+  .fab svg{width:24px;height:24px}
+  .fab-wa{bottom:calc(18px + var(--safe-b))}
+  .fab-wa::before{display:none}
+  .fab-call{bottom:calc(80px + var(--safe-b))}
   section{padding:56px 0}
   .container{padding:0 16px}
   .grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .featured-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .card-body{padding:12px 12px 14px}
   .card-body h3{font-size:.95rem}
   .price{font-size:1.1rem}
-  .desc{display:none}
+  .card .desc{display:none}
   .card-actions{grid-template-columns:1fr}
-  .card-actions .btn{min-height:40px;font-size:.8rem}
-  .badge{font-size:.6rem;padding:5px 8px}
-  .benefit-grid,.celebrate-grid{grid-template-columns:1fr}
+  .card-actions .btn{min-height:46px;font-size:.82rem}
+  .chip{min-height:46px}
+  .badge{font-size:.69rem;padding:5px 9px}
+  /* benefits + occasions: compact 2-up instead of a tall single column */
+  .benefit-grid,.celebrate-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .benefit{padding:18px 14px;border-radius:18px}
+  .benefit .icon{width:44px;height:44px;border-radius:14px;margin-bottom:12px}
+  .benefit .icon svg{width:22px;height:22px}
+  .benefit h3{font-size:.95rem;line-height:1.25}
+  .benefit p{font-size:.8rem;line-height:1.45}
+  .occasion{padding:20px 14px;border-radius:18px}
+  .occasion .ring{width:56px;height:56px;margin-bottom:12px}
+  .occasion .ring svg{width:24px;height:24px}
+  .occasion h3{font-size:1rem}
+  .occasion p{font-size:.8rem;line-height:1.45}
+  /* customer favourites: swipeable snap carousel */
+  .featured-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;margin:0 -16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .featured-grid::-webkit-scrollbar{display:none}
+  .feat{flex:0 0 62%;scroll-snap-align:start;scroll-snap-stop:always;aspect-ratio:3/3.4}
+  .map-visual{min-height:220px}
+  .pin .dot{width:60px;height:60px}
+  .loc-card{padding:24px 20px}
+  .loc-card .btn{width:100%;align-self:stretch!important}
   .contact .contact-grid{grid-template-columns:1fr;max-width:420px}
   .banner-inner{padding:48px 22px;border-radius:24px}
   .foot-grid{grid-template-columns:1fr;gap:28px}
@@ -634,18 +692,94 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   .chip-c{display:none}
   .stage{min-height:400px}
   .hero-notes{font-size:.82rem;gap:12px 18px}
-  .announce{font-size:.74rem}
+  .announce{font-size:.78rem;line-height:1.45}
+  .hero-label{font-size:.75rem;letter-spacing:.09em;padding:8px 12px}
+  .hero-label-more{display:none}
+  .float-chip small{font-size:.76rem}
   .logo{font-size:1rem}
   .modal-content{padding:24px 20px 22px}
   .modal-content h3{font-size:1.4rem}
-}
+  /* modal becomes a bottom sheet on phones */
+  .modal{align-items:flex-end;padding:0}
+  .modal-panel{
+    max-width:none;max-height:calc(100dvh - 24px);border-radius:24px 24px 0 0;
+    grid-template-columns:1fr;grid-template-rows:auto 1fr;animation:sheet .38s var(--ease);
+    padding-bottom:var(--safe-b);
+  }
+  .modal-panel::before{content:"";position:absolute;top:8px;left:50%;z-index:3;width:44px;height:5px;border-radius:3px;transform:translateX(-50%);background:rgba(255,255,255,.85);box-shadow:0 1px 4px rgba(0,0,0,.25)}
+  .modal-img{aspect-ratio:16/9;max-height:38vh}
+  .modal-content .rows{grid-template-columns:1fr 1fr;gap:8px}
+  .modal-content .row{flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;font-size:.8rem;color:var(--muted)}
+  .modal-content .row b{font-size:1.05rem}
+  .modal-content .desc{font-size:.9rem;margin-bottom:14px}
+  .modal-content .btn-block{min-height:52px;font-size:1rem}
+  .modal-close{top:10px;right:10px}
+  /* compact hero: text first, CTAs above the fold, smaller stage */
+  .hero{padding:28px 0 40px}
+  .hero-grid{gap:26px}
+  .hero-label{margin-bottom:14px}
+  h1{font-size:clamp(2rem,9vw,2.4rem)}
+  .hero p.lead{font-size:1rem;margin:14px 0 22px}
+  .hero-actions{gap:10px;flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%;min-height:52px;font-size:1rem}
+  .hero-notes{margin-top:22px;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;width:max-content;max-width:100%;margin-left:auto;margin-right:auto}
+  .stage{min-height:300px;order:2}
+  .cake-card{width:min(70%,260px);border-radius:26px}
+  .float-chip{padding:9px 11px;font-size:.76rem;border-radius:14px;gap:8px}
+  .float-chip .ic{width:30px;height:30px;border-radius:9px}
+  .float-chip .ic svg{width:16px;height:16px}
+  .float-chip small{font-size:.7rem}
+  .chip-a{top:2%;left:0}
+  .chip-b{bottom:10%;right:0}
+  .stage-plate.p1{width:90%}
+  /* announcement: one line */
+  .announce{padding:8px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .announce-more{display:none}
+  /* filters: one scrollable row */
+  .filters-wrap{position:relative;margin:0 -16px;padding:0 16px;-webkit-mask:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent);mask:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+  .filters{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .filters::-webkit-scrollbar{display:none}
+  .filters .chip{flex:0 0 auto;scroll-snap-align:start}
+  .toolbar{gap:14px;margin-bottom:22px}
+  /* consistent section rhythm */
+  .catalog{padding-top:56px}
+  .sub-cat{padding-top:48px}
+  .custom{padding:56px 0}
+  .benefits{padding:8px 0 48px;margin-top:-16px}
+  .section-head{margin-bottom:28px}
+  h2{font-size:clamp(1.7rem,7.5vw,2rem)}
+  .info-strip{margin:-10px auto 24px;gap:8px}
+  .info-strip span{font-size:.78rem;padding:8px 12px}
+  .result-meta{font-size:.82rem;margin-bottom:14px}
+  /* cards */
+  .card{border-radius:18px}
+  .card-body h3{font-size:.98rem;line-height:1.25;min-height:2.5em;display:flex;align-items:flex-end}
+  .card-meta{margin:6px 0 10px}
+  .weight{font-size:.74rem}
+  /* footer tighter */
+  footer{padding-top:44px}
+  .foot-bottom{justify-content:center;text-align:center;gap:6px;flex-direction:column;align-items:center;padding-right:64px}}
 @media (max-width:380px){
   .grid{gap:10px}
   .card-actions .btn{padding:8px 6px;font-size:.76rem}
-  .hero-actions .btn{width:100%}
+  .feat{flex-basis:70%}
+  .benefit-grid,.celebrate-grid{gap:10px}
+  .benefit,.occasion{padding:16px 12px}
 }
+@media (max-width:340px) and (max-height:650px){
+  /* Reserve a right rail so fixed contact buttons never cover the hero CTAs */
+  .hero-actions{padding-right:64px}
+  .hero-notes{width:calc(100% - 64px);max-width:none;margin-left:0;margin-right:64px}
+}
+
+/* Touch devices: no hover, so freeze decorative infinite loops (battery + scroll smoothness) */
 @media (hover:none){
-  .cake-card,.float-chip{animation-duration:9s}
+  .cake-card,.float-chip,.pin .dot{animation:none}
+  .fab-wa::before{animation-iteration-count:3}
+  .btn:hover,.chip:hover,.card:hover,.benefit:hover,.occasion:hover,.feat:hover,.contact-card:hover{transform:none}
+  .btn:active,.chip:active{transform:scale(.97)}
+  .feat:active{transform:scale(.98)}
+  .feat:hover img,.card:hover .card-media img{transform:none}
 }
 
 /* ========================================
@@ -666,16 +800,16 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
 <!-- ========================================
      ANNOUNCEMENT BAR
 ======================================== -->
-<div class="announce" role="note">🎂 <strong>Cake orders should be placed 1 day before</strong> &nbsp;•&nbsp; <strong>3 KM FREE DELIVERY</strong></div>
+<div class="announce" role="note">🎂 <strong>Order 1 day before</strong><span class="announce-sep"> • </span><strong>3 KM Free Delivery</strong><span class="announce-more"> • Singular Street, Marthandam</span></div>
 
 <!-- ========================================
      NAVIGATION
 ======================================== -->
 <header class="nav" id="nav">
   <div class="container">
-    <a href="#home" class="logo" aria-label="King and Queen Cake — Home">
+    <a href="#home" class="logo" aria-label="👑King 👸Queen Of Bakery Marthandam — Home">
       <span class="crown" aria-hidden="true">♛</span>
-      <span>KING &amp; QUEEN CAKE</span>
+      <span>👑King 👸Queen Of Bakery Marthandam</span>
     </a>
 
     <nav aria-label="Main navigation">
@@ -686,6 +820,12 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
         <li><a href="#customized">Customized</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="nav-menu-cta">
+          <a class="btn btn-whatsapp" href="#" data-wa="general" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
+            Order on WhatsApp
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -711,7 +851,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   <div class="hero-deco deco-2" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div>
-      <span class="hero-label">Freshly Baked • Made For Your Special Moments</span>
+      <span class="hero-label">Freshly Baked<span class="hero-label-more"> • Made For Your Special Moments</span></span>
       <h1 id="hero-title">Sweet Moments, <span class="gradient-text">Beautifully Baked.</span></h1>
       <p class="lead">Delicious cakes, customized creations, bento cakes and brownies made for your celebrations.</p>
       <div class="hero-actions">
@@ -735,7 +875,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
       <div class="stage-plate p1"></div>
       <div class="stage-plate p2"></div>
       <div class="cake-card" id="heroCake">
-        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80" alt="" width="900" height="1035" fetchpriority="high" onerror="handleImageError(this)">
+        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80" srcset="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=520&q=75 520w, https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=900&q=80 900w" sizes="(max-width:640px) 70vw, (max-width:960px) 340px, 440px" alt="" width="900" height="1035" fetchpriority="high" decoding="async" onerror="handleImageError(this)">
       </div>
       <div class="float-chip chip-a">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9L8.4 14l.7-4L6.2 7.2l4-.6z"/><path d="M4 21h16"/></svg></span>
@@ -756,8 +896,9 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
 <!-- ========================================
      BENEFITS
 ======================================== -->
-<section class="benefits" aria-label="Why order from King and Queen Cake">
+<section class="benefits" aria-labelledby="benefits-title">
   <div class="container">
+    <h2 id="benefits-title" class="sr-only">Why order from 👑King 👸Queen Of Bakery Marthandam</h2>
     <div class="benefit-grid">
       <article class="benefit reveal">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20v-7a6 6 0 0 1 12 0v7"/><path d="M12 7V4M9 5l1 2M15 5l-1 2"/><path d="M6 15c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 3 1"/></svg></div>
@@ -817,14 +958,14 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
         </button>
       </div>
-      <div class="filters" id="filters" role="group" aria-label="Filter by category">
+      <div class="filters-wrap"><div class="filters" id="filters" role="group" aria-label="Filter by category">
         <button class="chip" data-cat="All" aria-pressed="true">All</button>
         <button class="chip" data-cat="Classic Cakes" aria-pressed="false">Classic Cakes</button>
         <button class="chip" data-cat="Chocolate Cakes" aria-pressed="false">Chocolate Cakes</button>
         <button class="chip" data-cat="Special Cakes" aria-pressed="false">Special Cakes</button>
         <button class="chip" data-cat="Bento Cakes" aria-pressed="false">Bento Cakes</button>
         <button class="chip" data-cat="Brownies" aria-pressed="false">Brownies</button>
-      </div>
+      </div></div>
     </div>
 
     <p class="result-meta" id="resultMeta" aria-live="polite"></p>
@@ -962,8 +1103,8 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
     </div>
     <div class="reveal">
       <span class="eyebrow">Our bakery</span>
-      <h2 id="about-title">About King &amp; Queen Cake</h2>
-      <p>King &amp; Queen Cake is a local bakery serving Marthandam with cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.</p>
+      <h2 id="about-title">About 👑King 👸Queen Of Bakery Marthandam</h2>
+      <p>👑King 👸Queen Of Bakery Marthandam is a local bakery serving Marthandam with cakes, customized cakes, bento cakes and brownies for birthdays, celebrations and special occasions.</p>
       <p>Browse our collection, choose your favourite, and place your order directly through WhatsApp or by phone. Cake orders should be placed at least 1 day in advance.</p>
       <ul class="about-list">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Cakes, bento cakes &amp; brownies</li>
@@ -982,11 +1123,11 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Find us</span>
-      <h2 id="loc-title">Visit King &amp; Queen Cake</h2>
+      <h2 id="loc-title">Visit 👑King 👸Queen Of Bakery Marthandam</h2>
     </div>
     <div class="loc-grid">
       <div class="loc-card reveal">
-        <h3>King &amp; Queen Cake</h3>
+        <h3>👑King 👸Queen Of Bakery Marthandam</h3>
         <div class="addr">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a7 7 0 0 1 14 0c0 6.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
           <p><b>Singular Street</b>Marthandam</p>
@@ -1001,10 +1142,10 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
         </div>
         <!--
           GET DIRECTIONS: The exact Google Maps URL for the bakery was not supplied.
-          The link below opens a Google Maps SEARCH for "King & Queen Cake, Marthandam".
+          The link below opens a Google Maps SEARCH for "👑King 👸Queen Of Bakery Marthandam".
           Replace the href with the bakery's exact Google Maps share link when available.
         -->
-        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=King%20%26%20Queen%20Cake%2C%20Marthandam" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:6px">
+        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=%F0%9F%91%91King%20%F0%9F%91%B8Queen%20Of%20Bakery%20Marthandam" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:6px">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8z"/></svg>
           Get Directions
         </a>
@@ -1061,12 +1202,12 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   <div class="container">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#home" class="logo"><span class="crown" aria-hidden="true">♛</span><span>KING &amp; QUEEN CAKE</span></a>
+        <a href="#home" class="logo"><span class="crown" aria-hidden="true">♛</span><span>👑King 👸Queen Of Bakery Marthandam</span></a>
         <p>Freshly baked cakes for every celebration.</p>
         <!-- Add official social media links when provided by the bakery. -->
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3>Explore</h3>
         <ul>
           <li><a href="#cakes">Cakes</a></li>
           <li><a href="#bento">Bento Cakes</a></li>
@@ -1076,7 +1217,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <ul>
           <li><a href="tel:7418432421"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>7418432421</a></li>
           <li><a href="tel:8754716630"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>8754716630</a></li>
@@ -1084,7 +1225,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
         </ul>
       </div>
       <div>
-        <h4>Good to know</h4>
+        <h3>Good to know</h3>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>3 KM Free Delivery</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Cake orders should be placed 1 day before.</li>
@@ -1093,7 +1234,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> <b>King &amp; Queen Cake</b>, Marthandam. All rights reserved.</span>
+      <span>© <span id="year"></span> <b>👑King 👸Queen Of Bakery Marthandam</b>. All rights reserved.</span>
       <span>LIN No: <b>22424084000142</b></span>
     </div>
   </div>
@@ -1102,10 +1243,10 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
 <!-- ========================================
      FLOATING BUTTONS
 ======================================== -->
-<a class="fab fab-wa" href="#" data-wa="general" target="_blank" rel="noopener" aria-label="Chat with King and Queen Cake on WhatsApp">
+<a class="fab fab-wa" href="#" data-wa="general" target="_blank" rel="noopener" aria-label="Chat with 👑King 👸Queen Of Bakery Marthandam on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3Z"/></svg>
 </a>
-<a class="fab fab-call" href="tel:7418432421" aria-label="Call King and Queen Cake at 7418432421">
+<a class="fab fab-call" href="tel:7418432421" aria-label="Call 👑King 👸Queen Of Bakery Marthandam at 7418432421">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
 </a>
 
@@ -1149,7 +1290,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
 
   /* ---------- Business constants ---------- */
   const WHATSAPP_NUMBER = '917418432421';
-  const BAKERY_NAME = 'King & Queen Cake';
+  const BAKERY_NAME = '👑King 👸Queen Of Bakery Marthandam';
 
   /* ---------- Image helpers ---------- */
   const U = (id, w = 640) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${w}&q=75`;
@@ -1328,6 +1469,11 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   });
 
   /* ---------- Rendering ---------- */
+  /* Responsive srcset for Unsplash URLs built by U(): swaps w/h so phones download smaller files */
+  const srcsetFor = (url, widths = [320, 480, 640]) =>
+    widths.map(w => `${url.replace(/w=\d+&h=\d+/, `w=${w}&h=${w}`)} ${w}w`).join(', ');
+  const CARD_SIZES = '(max-width:640px) 46vw, (max-width:1100px) 30vw, 290px';
+
   function cardHTML(p) {
     const priceClass = p.price === null ? 'price req' : 'price';
     const badge = p.category === 'Brownies' ? '<span class="badge gold">1 KG • ₹900</span>'
@@ -1337,7 +1483,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
       <article class="card" data-id="${p.id}">
         <button class="card-media" type="button" data-view="${p.id}" aria-label="View details of ${esc(p.name)}">
           ${badge}
-          <img src="${p.image}" alt="${esc(altFor(p))}" loading="lazy" width="640" height="640" onerror="handleImageError(this)">
+          <img src="${p.image}" srcset="${srcsetFor(p.image)}" sizes="${CARD_SIZES}" alt="${esc(altFor(p))}" loading="lazy" decoding="async" width="640" height="640" onerror="handleImageError(this)">
         </button>
         <div class="card-body">
           <h3>${esc(p.name)}</h3>
@@ -1387,7 +1533,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
       const label = p ? `${p.category}` : f.category;
       return `
         <button class="feat reveal" type="button" data-featured="${esc(f.category)}" aria-label="${esc(f.name)} — see ${esc(label)}">
-          <img src="${img}" alt="${esc(f.name)}" loading="lazy" width="480" height="576" onerror="handleImageError(this)">
+          <img src="${img}" srcset="${srcsetFor(img, [320, 480, 640])}" sizes="(max-width:640px) 62vw, (max-width:1100px) 30vw, 200px" alt="${esc(f.name)}" loading="lazy" decoding="async" width="480" height="576" onerror="handleImageError(this)">
           <span class="cap"><strong>${esc(f.name)}</strong><span>${esc(label)}</span></span>
         </button>`;
     }).join('');
@@ -1454,6 +1600,24 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   let lastFocus = null;
   let currentProductId = null;
 
+  /* Scroll lock that also works in iOS Safari (overflow:hidden alone is ignored there) */
+  let lockedScrollY = 0;
+  function lockScroll() {
+    lockedScrollY = window.scrollY;
+    const sbw = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${lockedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    if (sbw > 0) document.body.style.paddingRight = `${sbw}px`;
+  }
+  function unlockScroll() {
+    const s = document.body.style;
+    s.position = ''; s.top = ''; s.left = ''; s.right = ''; s.width = ''; s.paddingRight = '';
+    window.scrollTo({ top: lockedScrollY, behavior: 'instant' });
+  }
+
   function openProductModal(id) {
     const p = products.find(x => x.id === id);
     if (!p) return;
@@ -1473,14 +1637,15 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
       : 'Cake orders should be placed at least 1 day in advance. Free delivery within 3 KM.';
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    lockScroll();
+    modal.querySelector('.modal-panel').scrollTop = 0;
     $('#modalClose').focus();
   }
 
   function closeProductModal() {
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    unlockScroll();
     currentProductId = null;
     if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
   }
@@ -1519,7 +1684,7 @@ footer li svg{width:16px;height:16px;display:inline-block;vertical-align:-3px;ma
   /* ---------- Sticky nav shadow + active link ---------- */
   const nav = $('#nav');
   const sections = ['home', 'cakes', 'brownies', 'customized', 'about', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
-  const linkMap = new Map([...navLinks.querySelectorAll('a')].map(a => [a.getAttribute('href').slice(1), a]));
+  const linkMap = new Map([...navLinks.querySelectorAll('a:not(.btn)')].map(a => [a.getAttribute('href').slice(1), a]));
 
   function onScroll() {
     nav.classList.toggle('scrolled', window.scrollY > 8);
